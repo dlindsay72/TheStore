@@ -12,6 +12,54 @@
 		7B0DD7371E7AEA0E006F05DF /* PirateBay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B0DD7351E7AEA0E006F05DF /* PirateBay.xcdatamodeld */; };
 		7B7418711E7A23C900CD9F02 /* PromoContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */; };
 		7B7418731E7A23E900CD9F02 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7418721E7A23E900CD9F02 /* HomeVC.swift */; };
+		7BBA7B5E1E7AFEFB00DA23F7 /* captainjake1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B221E7AFEFB00DA23F7 /* captainjake1.jpg */; };
+		7BBA7B5F1E7AFEFB00DA23F7 /* piratechest1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B241E7AFEFB00DA23F7 /* piratechest1.jpg */; };
+		7BBA7B601E7AFEFB00DA23F7 /* piratescurse1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B261E7AFEFB00DA23F7 /* piratescurse1.jpg */; };
+		7BBA7B611E7AFEFB00DA23F7 /* piratefairy1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B281E7AFEFB00DA23F7 /* piratefairy1.jpg */; };
+		7BBA7B621E7AFEFB00DA23F7 /* piratefairy2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B291E7AFEFB00DA23F7 /* piratefairy2.jpg */; };
+		7BBA7B631E7AFEFB00DA23F7 /* pirates1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B2B1E7AFEFB00DA23F7 /* pirates1.jpg */; };
+		7BBA7B641E7AFEFB00DA23F7 /* pirates2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B2C1E7AFEFB00DA23F7 /* pirates2.jpg */; };
+		7BBA7B651E7AFEFB00DA23F7 /* pirates3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B2D1E7AFEFB00DA23F7 /* pirates3.jpg */; };
+		7BBA7B661E7AFEFB00DA23F7 /* pirates4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B2E1E7AFEFB00DA23F7 /* pirates4.jpg */; };
+		7BBA7B671E7AFEFB00DA23F7 /* pirates5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B2F1E7AFEFB00DA23F7 /* pirates5.jpg */; };
+		7BBA7B681E7AFEFB00DA23F7 /* pirates6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B301E7AFEFB00DA23F7 /* pirates6.jpg */; };
+		7BBA7B691E7AFEFB00DA23F7 /* piratesilicon1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B321E7AFEFB00DA23F7 /* piratesilicon1.jpg */; };
+		7BBA7B6A1E7AFEFB00DA23F7 /* piratetides1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B341E7AFEFB00DA23F7 /* piratetides1.jpg */; };
+		7BBA7B6B1E7AFEFB00DA23F7 /* piratetides2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B351E7AFEFB00DA23F7 /* piratetides2.jpg */; };
+		7BBA7B6C1E7AFEFB00DA23F7 /* piratetides3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B361E7AFEFB00DA23F7 /* piratetides3.jpg */; };
+		7BBA7B6D1E7AFEFB00DA23F7 /* piratetides4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B371E7AFEFB00DA23F7 /* piratetides4.jpg */; };
+		7BBA7B6E1E7AFEFB00DA23F7 /* piratetides5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B381E7AFEFB00DA23F7 /* piratetides5.jpg */; };
+		7BBA7B6F1E7AFEFB00DA23F7 /* piratetides6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B391E7AFEFB00DA23F7 /* piratetides6.jpg */; };
+		7BBA7B701E7AFEFB00DA23F7 /* scooby1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B3B1E7AFEFB00DA23F7 /* scooby1.jpg */; };
+		7BBA7B711E7AFEFB00DA23F7 /* buccaneerboat1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B3E1E7AFEFB00DA23F7 /* buccaneerboat1.jpg */; };
+		7BBA7B721E7AFEFB00DA23F7 /* buccaneerboat2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B3F1E7AFEFB00DA23F7 /* buccaneerboat2.jpg */; };
+		7BBA7B731E7AFEFB00DA23F7 /* buccaneerboat3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B401E7AFEFB00DA23F7 /* buccaneerboat3.jpg */; };
+		7BBA7B741E7AFEFB00DA23F7 /* buccaneerboat4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B411E7AFEFB00DA23F7 /* buccaneerboat4.jpg */; };
+		7BBA7B751E7AFEFB00DA23F7 /* deluxeship1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B431E7AFEFB00DA23F7 /* deluxeship1.jpg */; };
+		7BBA7B761E7AFEFB00DA23F7 /* jakeneverland1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B451E7AFEFB00DA23F7 /* jakeneverland1.jpg */; };
+		7BBA7B771E7AFEFB00DA23F7 /* jakeneverland2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B461E7AFEFB00DA23F7 /* jakeneverland2.jpg */; };
+		7BBA7B781E7AFEFB00DA23F7 /* jakeneverland3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B471E7AFEFB00DA23F7 /* jakeneverland3.jpg */; };
+		7BBA7B791E7AFEFB00DA23F7 /* jakeneverland4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B481E7AFEFB00DA23F7 /* jakeneverland4.jpg */; };
+		7BBA7B7A1E7AFEFB00DA23F7 /* jakeneverland5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B491E7AFEFB00DA23F7 /* jakeneverland5.jpg */; };
+		7BBA7B7B1E7AFEFB00DA23F7 /* littletikes1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B4B1E7AFEFB00DA23F7 /* littletikes1.jpg */; };
+		7BBA7B7C1E7AFEFB00DA23F7 /* littletikes2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B4C1E7AFEFB00DA23F7 /* littletikes2.jpg */; };
+		7BBA7B7D1E7AFEFB00DA23F7 /* littletikes3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B4D1E7AFEFB00DA23F7 /* littletikes3.jpg */; };
+		7BBA7B7E1E7AFEFB00DA23F7 /* littletikes4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B4E1E7AFEFB00DA23F7 /* littletikes4.jpg */; };
+		7BBA7B7F1E7AFEFB00DA23F7 /* littletikes5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B4F1E7AFEFB00DA23F7 /* littletikes5.jpg */; };
+		7BBA7B801E7AFEFB00DA23F7 /* popupPirate1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B511E7AFEFB00DA23F7 /* popupPirate1.jpg */; };
+		7BBA7B811E7AFEFB00DA23F7 /* popupPirate2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B521E7AFEFB00DA23F7 /* popupPirate2.jpg */; };
+		7BBA7B821E7AFEFB00DA23F7 /* popupPirate3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B531E7AFEFB00DA23F7 /* popupPirate3.jpg */; };
+		7BBA7B831E7AFEFB00DA23F7 /* popupPirate4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B541E7AFEFB00DA23F7 /* popupPirate4.jpg */; };
+		7BBA7B841E7AFEFB00DA23F7 /* popupPirate5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B551E7AFEFB00DA23F7 /* popupPirate5.jpg */; };
+		7BBA7B851E7AFEFB00DA23F7 /* popupPirate6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B561E7AFEFB00DA23F7 /* popupPirate6.jpg */; };
+		7BBA7B861E7AFEFB00DA23F7 /* sharkbiteship1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B581E7AFEFB00DA23F7 /* sharkbiteship1.jpg */; };
+		7BBA7B871E7AFEFB00DA23F7 /* sharkbiteship2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B591E7AFEFB00DA23F7 /* sharkbiteship2.jpg */; };
+		7BBA7B881E7AFEFB00DA23F7 /* sharkbiteship3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B5A1E7AFEFB00DA23F7 /* sharkbiteship3.jpg */; };
+		7BBA7B891E7AFEFB00DA23F7 /* sharkbiteship4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B5B1E7AFEFB00DA23F7 /* sharkbiteship4.jpg */; };
+		7BBA7B8A1E7AFEFB00DA23F7 /* sharkbiteship5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B5C1E7AFEFB00DA23F7 /* sharkbiteship5.jpg */; };
+		7BBA7B8B1E7AFEFB00DA23F7 /* toydrive.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B5D1E7AFEFB00DA23F7 /* toydrive.png */; };
+		7BBA7B8E1E7AFF3000DA23F7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBA7B8D1E7AFF3000DA23F7 /* Utility.swift */; };
+		7BBA7B911E7AFFD700DA23F7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBA7B901E7AFFD700DA23F7 /* String+Extension.swift */; };
 		7BD54DA51E7A1595005466C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD54DA41E7A1595005466C7 /* AppDelegate.swift */; };
 		7BD54DAA1E7A1596005466C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD54DA81E7A1596005466C7 /* Main.storyboard */; };
 		7BD54DAC1E7A1596005466C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BD54DAB1E7A1596005466C7 /* Assets.xcassets */; };
@@ -27,6 +75,54 @@
 		7B0DD7361E7AEA0E006F05DF /* PirateBay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PirateBay.xcdatamodel; sourceTree = "<group>"; };
 		7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoContentVC.swift; sourceTree = "<group>"; };
 		7B7418721E7A23E900CD9F02 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		7BBA7B221E7AFEFB00DA23F7 /* captainjake1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = captainjake1.jpg; sourceTree = "<group>"; };
+		7BBA7B241E7AFEFB00DA23F7 /* piratechest1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratechest1.jpg; sourceTree = "<group>"; };
+		7BBA7B261E7AFEFB00DA23F7 /* piratescurse1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratescurse1.jpg; sourceTree = "<group>"; };
+		7BBA7B281E7AFEFB00DA23F7 /* piratefairy1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratefairy1.jpg; sourceTree = "<group>"; };
+		7BBA7B291E7AFEFB00DA23F7 /* piratefairy2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratefairy2.jpg; sourceTree = "<group>"; };
+		7BBA7B2B1E7AFEFB00DA23F7 /* pirates1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pirates1.jpg; sourceTree = "<group>"; };
+		7BBA7B2C1E7AFEFB00DA23F7 /* pirates2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pirates2.jpg; sourceTree = "<group>"; };
+		7BBA7B2D1E7AFEFB00DA23F7 /* pirates3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pirates3.jpg; sourceTree = "<group>"; };
+		7BBA7B2E1E7AFEFB00DA23F7 /* pirates4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pirates4.jpg; sourceTree = "<group>"; };
+		7BBA7B2F1E7AFEFB00DA23F7 /* pirates5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pirates5.jpg; sourceTree = "<group>"; };
+		7BBA7B301E7AFEFB00DA23F7 /* pirates6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pirates6.jpg; sourceTree = "<group>"; };
+		7BBA7B321E7AFEFB00DA23F7 /* piratesilicon1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratesilicon1.jpg; sourceTree = "<group>"; };
+		7BBA7B341E7AFEFB00DA23F7 /* piratetides1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratetides1.jpg; sourceTree = "<group>"; };
+		7BBA7B351E7AFEFB00DA23F7 /* piratetides2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratetides2.jpg; sourceTree = "<group>"; };
+		7BBA7B361E7AFEFB00DA23F7 /* piratetides3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratetides3.jpg; sourceTree = "<group>"; };
+		7BBA7B371E7AFEFB00DA23F7 /* piratetides4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratetides4.jpg; sourceTree = "<group>"; };
+		7BBA7B381E7AFEFB00DA23F7 /* piratetides5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratetides5.jpg; sourceTree = "<group>"; };
+		7BBA7B391E7AFEFB00DA23F7 /* piratetides6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratetides6.jpg; sourceTree = "<group>"; };
+		7BBA7B3B1E7AFEFB00DA23F7 /* scooby1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scooby1.jpg; sourceTree = "<group>"; };
+		7BBA7B3E1E7AFEFB00DA23F7 /* buccaneerboat1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buccaneerboat1.jpg; sourceTree = "<group>"; };
+		7BBA7B3F1E7AFEFB00DA23F7 /* buccaneerboat2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buccaneerboat2.jpg; sourceTree = "<group>"; };
+		7BBA7B401E7AFEFB00DA23F7 /* buccaneerboat3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buccaneerboat3.jpg; sourceTree = "<group>"; };
+		7BBA7B411E7AFEFB00DA23F7 /* buccaneerboat4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buccaneerboat4.jpg; sourceTree = "<group>"; };
+		7BBA7B431E7AFEFB00DA23F7 /* deluxeship1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deluxeship1.jpg; sourceTree = "<group>"; };
+		7BBA7B451E7AFEFB00DA23F7 /* jakeneverland1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jakeneverland1.jpg; sourceTree = "<group>"; };
+		7BBA7B461E7AFEFB00DA23F7 /* jakeneverland2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jakeneverland2.jpg; sourceTree = "<group>"; };
+		7BBA7B471E7AFEFB00DA23F7 /* jakeneverland3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jakeneverland3.jpg; sourceTree = "<group>"; };
+		7BBA7B481E7AFEFB00DA23F7 /* jakeneverland4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jakeneverland4.jpg; sourceTree = "<group>"; };
+		7BBA7B491E7AFEFB00DA23F7 /* jakeneverland5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jakeneverland5.jpg; sourceTree = "<group>"; };
+		7BBA7B4B1E7AFEFB00DA23F7 /* littletikes1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = littletikes1.jpg; sourceTree = "<group>"; };
+		7BBA7B4C1E7AFEFB00DA23F7 /* littletikes2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = littletikes2.jpg; sourceTree = "<group>"; };
+		7BBA7B4D1E7AFEFB00DA23F7 /* littletikes3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = littletikes3.jpg; sourceTree = "<group>"; };
+		7BBA7B4E1E7AFEFB00DA23F7 /* littletikes4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = littletikes4.jpg; sourceTree = "<group>"; };
+		7BBA7B4F1E7AFEFB00DA23F7 /* littletikes5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = littletikes5.jpg; sourceTree = "<group>"; };
+		7BBA7B511E7AFEFB00DA23F7 /* popupPirate1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popupPirate1.jpg; sourceTree = "<group>"; };
+		7BBA7B521E7AFEFB00DA23F7 /* popupPirate2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popupPirate2.jpg; sourceTree = "<group>"; };
+		7BBA7B531E7AFEFB00DA23F7 /* popupPirate3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popupPirate3.jpg; sourceTree = "<group>"; };
+		7BBA7B541E7AFEFB00DA23F7 /* popupPirate4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popupPirate4.jpg; sourceTree = "<group>"; };
+		7BBA7B551E7AFEFB00DA23F7 /* popupPirate5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popupPirate5.jpg; sourceTree = "<group>"; };
+		7BBA7B561E7AFEFB00DA23F7 /* popupPirate6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popupPirate6.jpg; sourceTree = "<group>"; };
+		7BBA7B581E7AFEFB00DA23F7 /* sharkbiteship1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sharkbiteship1.jpg; sourceTree = "<group>"; };
+		7BBA7B591E7AFEFB00DA23F7 /* sharkbiteship2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sharkbiteship2.jpg; sourceTree = "<group>"; };
+		7BBA7B5A1E7AFEFB00DA23F7 /* sharkbiteship3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sharkbiteship3.jpg; sourceTree = "<group>"; };
+		7BBA7B5B1E7AFEFB00DA23F7 /* sharkbiteship4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sharkbiteship4.jpg; sourceTree = "<group>"; };
+		7BBA7B5C1E7AFEFB00DA23F7 /* sharkbiteship5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sharkbiteship5.jpg; sourceTree = "<group>"; };
+		7BBA7B5D1E7AFEFB00DA23F7 /* toydrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toydrive.png; sourceTree = "<group>"; };
+		7BBA7B8D1E7AFF3000DA23F7 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		7BBA7B901E7AFFD700DA23F7 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		7BD54DA11E7A1595005466C7 /* TheStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD54DA41E7A1595005466C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD54DA91E7A1596005466C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +155,194 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		7BBA7B201E7AFEFB00DA23F7 /* dvd */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B211E7AFEFB00DA23F7 /* captainjake */,
+				7BBA7B231E7AFEFB00DA23F7 /* piratechest */,
+				7BBA7B251E7AFEFB00DA23F7 /* piratecurse */,
+				7BBA7B271E7AFEFB00DA23F7 /* piratefairy */,
+				7BBA7B2A1E7AFEFB00DA23F7 /* pirates */,
+				7BBA7B311E7AFEFB00DA23F7 /* piratesilicon */,
+				7BBA7B331E7AFEFB00DA23F7 /* piratetides */,
+				7BBA7B3A1E7AFEFB00DA23F7 /* scooby */,
+			);
+			path = dvd;
+			sourceTree = "<group>";
+		};
+		7BBA7B211E7AFEFB00DA23F7 /* captainjake */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B221E7AFEFB00DA23F7 /* captainjake1.jpg */,
+			);
+			path = captainjake;
+			sourceTree = "<group>";
+		};
+		7BBA7B231E7AFEFB00DA23F7 /* piratechest */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B241E7AFEFB00DA23F7 /* piratechest1.jpg */,
+			);
+			path = piratechest;
+			sourceTree = "<group>";
+		};
+		7BBA7B251E7AFEFB00DA23F7 /* piratecurse */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B261E7AFEFB00DA23F7 /* piratescurse1.jpg */,
+			);
+			path = piratecurse;
+			sourceTree = "<group>";
+		};
+		7BBA7B271E7AFEFB00DA23F7 /* piratefairy */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B281E7AFEFB00DA23F7 /* piratefairy1.jpg */,
+				7BBA7B291E7AFEFB00DA23F7 /* piratefairy2.jpg */,
+			);
+			path = piratefairy;
+			sourceTree = "<group>";
+		};
+		7BBA7B2A1E7AFEFB00DA23F7 /* pirates */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B2B1E7AFEFB00DA23F7 /* pirates1.jpg */,
+				7BBA7B2C1E7AFEFB00DA23F7 /* pirates2.jpg */,
+				7BBA7B2D1E7AFEFB00DA23F7 /* pirates3.jpg */,
+				7BBA7B2E1E7AFEFB00DA23F7 /* pirates4.jpg */,
+				7BBA7B2F1E7AFEFB00DA23F7 /* pirates5.jpg */,
+				7BBA7B301E7AFEFB00DA23F7 /* pirates6.jpg */,
+			);
+			path = pirates;
+			sourceTree = "<group>";
+		};
+		7BBA7B311E7AFEFB00DA23F7 /* piratesilicon */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B321E7AFEFB00DA23F7 /* piratesilicon1.jpg */,
+			);
+			path = piratesilicon;
+			sourceTree = "<group>";
+		};
+		7BBA7B331E7AFEFB00DA23F7 /* piratetides */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B341E7AFEFB00DA23F7 /* piratetides1.jpg */,
+				7BBA7B351E7AFEFB00DA23F7 /* piratetides2.jpg */,
+				7BBA7B361E7AFEFB00DA23F7 /* piratetides3.jpg */,
+				7BBA7B371E7AFEFB00DA23F7 /* piratetides4.jpg */,
+				7BBA7B381E7AFEFB00DA23F7 /* piratetides5.jpg */,
+				7BBA7B391E7AFEFB00DA23F7 /* piratetides6.jpg */,
+			);
+			path = piratetides;
+			sourceTree = "<group>";
+		};
+		7BBA7B3A1E7AFEFB00DA23F7 /* scooby */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B3B1E7AFEFB00DA23F7 /* scooby1.jpg */,
+			);
+			path = scooby;
+			sourceTree = "<group>";
+		};
+		7BBA7B3C1E7AFEFB00DA23F7 /* toy */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B3D1E7AFEFB00DA23F7 /* buccaneerBoat */,
+				7BBA7B421E7AFEFB00DA23F7 /* deluxeship */,
+				7BBA7B441E7AFEFB00DA23F7 /* jakeneverland */,
+				7BBA7B4A1E7AFEFB00DA23F7 /* littletikes */,
+				7BBA7B501E7AFEFB00DA23F7 /* popupPirate */,
+				7BBA7B571E7AFEFB00DA23F7 /* sharkbiteship */,
+				7BBA7B5D1E7AFEFB00DA23F7 /* toydrive.png */,
+			);
+			path = toy;
+			sourceTree = "<group>";
+		};
+		7BBA7B3D1E7AFEFB00DA23F7 /* buccaneerBoat */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B3E1E7AFEFB00DA23F7 /* buccaneerboat1.jpg */,
+				7BBA7B3F1E7AFEFB00DA23F7 /* buccaneerboat2.jpg */,
+				7BBA7B401E7AFEFB00DA23F7 /* buccaneerboat3.jpg */,
+				7BBA7B411E7AFEFB00DA23F7 /* buccaneerboat4.jpg */,
+			);
+			path = buccaneerBoat;
+			sourceTree = "<group>";
+		};
+		7BBA7B421E7AFEFB00DA23F7 /* deluxeship */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B431E7AFEFB00DA23F7 /* deluxeship1.jpg */,
+			);
+			path = deluxeship;
+			sourceTree = "<group>";
+		};
+		7BBA7B441E7AFEFB00DA23F7 /* jakeneverland */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B451E7AFEFB00DA23F7 /* jakeneverland1.jpg */,
+				7BBA7B461E7AFEFB00DA23F7 /* jakeneverland2.jpg */,
+				7BBA7B471E7AFEFB00DA23F7 /* jakeneverland3.jpg */,
+				7BBA7B481E7AFEFB00DA23F7 /* jakeneverland4.jpg */,
+				7BBA7B491E7AFEFB00DA23F7 /* jakeneverland5.jpg */,
+			);
+			path = jakeneverland;
+			sourceTree = "<group>";
+		};
+		7BBA7B4A1E7AFEFB00DA23F7 /* littletikes */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B4B1E7AFEFB00DA23F7 /* littletikes1.jpg */,
+				7BBA7B4C1E7AFEFB00DA23F7 /* littletikes2.jpg */,
+				7BBA7B4D1E7AFEFB00DA23F7 /* littletikes3.jpg */,
+				7BBA7B4E1E7AFEFB00DA23F7 /* littletikes4.jpg */,
+				7BBA7B4F1E7AFEFB00DA23F7 /* littletikes5.jpg */,
+			);
+			path = littletikes;
+			sourceTree = "<group>";
+		};
+		7BBA7B501E7AFEFB00DA23F7 /* popupPirate */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B511E7AFEFB00DA23F7 /* popupPirate1.jpg */,
+				7BBA7B521E7AFEFB00DA23F7 /* popupPirate2.jpg */,
+				7BBA7B531E7AFEFB00DA23F7 /* popupPirate3.jpg */,
+				7BBA7B541E7AFEFB00DA23F7 /* popupPirate4.jpg */,
+				7BBA7B551E7AFEFB00DA23F7 /* popupPirate5.jpg */,
+				7BBA7B561E7AFEFB00DA23F7 /* popupPirate6.jpg */,
+			);
+			path = popupPirate;
+			sourceTree = "<group>";
+		};
+		7BBA7B571E7AFEFB00DA23F7 /* sharkbiteship */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B581E7AFEFB00DA23F7 /* sharkbiteship1.jpg */,
+				7BBA7B591E7AFEFB00DA23F7 /* sharkbiteship2.jpg */,
+				7BBA7B5A1E7AFEFB00DA23F7 /* sharkbiteship3.jpg */,
+				7BBA7B5B1E7AFEFB00DA23F7 /* sharkbiteship4.jpg */,
+				7BBA7B5C1E7AFEFB00DA23F7 /* sharkbiteship5.jpg */,
+			);
+			path = sharkbiteship;
+			sourceTree = "<group>";
+		};
+		7BBA7B8C1E7AFF1700DA23F7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B8D1E7AFF3000DA23F7 /* Utility.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		7BBA7B8F1E7AFFC200DA23F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7BBA7B901E7AFFD700DA23F7 /* String+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		7BD54D981E7A1595005466C7 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +362,8 @@
 		7BD54DA31E7A1595005466C7 /* TheStore */ = {
 			isa = PBXGroup;
 			children = (
+				7BBA7B8F1E7AFFC200DA23F7 /* Extensions */,
+				7BBA7B8C1E7AFF1700DA23F7 /* Helper */,
 				7BD54DB91E7A1EF0005466C7 /* assets */,
 				7B74186F1E7A239000CD9F02 /* Model */,
 				7BD54DB71E7A1E9D005466C7 /* View */,
@@ -110,6 +396,8 @@
 		7BD54DB91E7A1EF0005466C7 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				7BBA7B201E7AFEFB00DA23F7 /* dvd */,
+				7BBA7B3C1E7AFEFB00DA23F7 /* toy */,
 				7BD54DBB1E7A1F13005466C7 /* piratebattle.pdf */,
 				7BD54DBD1E7A1F13005466C7 /* piratemap.pdf */,
 				7BD54DBE1E7A1F13005466C7 /* piratesofcaribbean.pdf */,
@@ -179,11 +467,57 @@
 			files = (
 				7BD54DAF1E7A1596005466C7 /* LaunchScreen.storyboard in Resources */,
 				7BD54DC41E7A1F13005466C7 /* piratesofcaribbean.pdf in Resources */,
+				7BBA7B6E1E7AFEFB00DA23F7 /* piratetides5.jpg in Resources */,
+				7BBA7B7B1E7AFEFB00DA23F7 /* littletikes1.jpg in Resources */,
+				7BBA7B6B1E7AFEFB00DA23F7 /* piratetides2.jpg in Resources */,
+				7BBA7B691E7AFEFB00DA23F7 /* piratesilicon1.jpg in Resources */,
 				7B0DD7321E7AE390006F05DF /* products.json in Resources */,
+				7BBA7B811E7AFEFB00DA23F7 /* popupPirate2.jpg in Resources */,
+				7BBA7B871E7AFEFB00DA23F7 /* sharkbiteship2.jpg in Resources */,
+				7BBA7B831E7AFEFB00DA23F7 /* popupPirate4.jpg in Resources */,
+				7BBA7B641E7AFEFB00DA23F7 /* pirates2.jpg in Resources */,
+				7BBA7B6C1E7AFEFB00DA23F7 /* piratetides3.jpg in Resources */,
+				7BBA7B7F1E7AFEFB00DA23F7 /* littletikes5.jpg in Resources */,
+				7BBA7B821E7AFEFB00DA23F7 /* popupPirate3.jpg in Resources */,
+				7BBA7B7E1E7AFEFB00DA23F7 /* littletikes4.jpg in Resources */,
+				7BBA7B851E7AFEFB00DA23F7 /* popupPirate6.jpg in Resources */,
+				7BBA7B601E7AFEFB00DA23F7 /* piratescurse1.jpg in Resources */,
+				7BBA7B721E7AFEFB00DA23F7 /* buccaneerboat2.jpg in Resources */,
+				7BBA7B751E7AFEFB00DA23F7 /* deluxeship1.jpg in Resources */,
+				7BBA7B6A1E7AFEFB00DA23F7 /* piratetides1.jpg in Resources */,
+				7BBA7B761E7AFEFB00DA23F7 /* jakeneverland1.jpg in Resources */,
+				7BBA7B5F1E7AFEFB00DA23F7 /* piratechest1.jpg in Resources */,
+				7BBA7B6F1E7AFEFB00DA23F7 /* piratetides6.jpg in Resources */,
+				7BBA7B881E7AFEFB00DA23F7 /* sharkbiteship3.jpg in Resources */,
+				7BBA7B621E7AFEFB00DA23F7 /* piratefairy2.jpg in Resources */,
+				7BBA7B711E7AFEFB00DA23F7 /* buccaneerboat1.jpg in Resources */,
+				7BBA7B661E7AFEFB00DA23F7 /* pirates4.jpg in Resources */,
+				7BBA7B791E7AFEFB00DA23F7 /* jakeneverland4.jpg in Resources */,
+				7BBA7B5E1E7AFEFB00DA23F7 /* captainjake1.jpg in Resources */,
+				7BBA7B771E7AFEFB00DA23F7 /* jakeneverland2.jpg in Resources */,
+				7BBA7B8B1E7AFEFB00DA23F7 /* toydrive.png in Resources */,
+				7BBA7B681E7AFEFB00DA23F7 /* pirates6.jpg in Resources */,
 				7BD54DAC1E7A1596005466C7 /* Assets.xcassets in Resources */,
 				7BD54DC11E7A1F13005466C7 /* piratebattle.pdf in Resources */,
+				7BBA7B7C1E7AFEFB00DA23F7 /* littletikes2.jpg in Resources */,
 				7BD54DAA1E7A1596005466C7 /* Main.storyboard in Resources */,
+				7BBA7B611E7AFEFB00DA23F7 /* piratefairy1.jpg in Resources */,
+				7BBA7B701E7AFEFB00DA23F7 /* scooby1.jpg in Resources */,
+				7BBA7B861E7AFEFB00DA23F7 /* sharkbiteship1.jpg in Resources */,
+				7BBA7B671E7AFEFB00DA23F7 /* pirates5.jpg in Resources */,
+				7BBA7B7A1E7AFEFB00DA23F7 /* jakeneverland5.jpg in Resources */,
+				7BBA7B731E7AFEFB00DA23F7 /* buccaneerboat3.jpg in Resources */,
+				7BBA7B891E7AFEFB00DA23F7 /* sharkbiteship4.jpg in Resources */,
+				7BBA7B781E7AFEFB00DA23F7 /* jakeneverland3.jpg in Resources */,
+				7BBA7B8A1E7AFEFB00DA23F7 /* sharkbiteship5.jpg in Resources */,
+				7BBA7B741E7AFEFB00DA23F7 /* buccaneerboat4.jpg in Resources */,
+				7BBA7B651E7AFEFB00DA23F7 /* pirates3.jpg in Resources */,
+				7BBA7B6D1E7AFEFB00DA23F7 /* piratetides4.jpg in Resources */,
+				7BBA7B841E7AFEFB00DA23F7 /* popupPirate5.jpg in Resources */,
+				7BBA7B631E7AFEFB00DA23F7 /* pirates1.jpg in Resources */,
+				7BBA7B7D1E7AFEFB00DA23F7 /* littletikes3.jpg in Resources */,
 				7BD54DC31E7A1F13005466C7 /* piratemap.pdf in Resources */,
+				7BBA7B801E7AFEFB00DA23F7 /* popupPirate1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +529,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B7418711E7A23C900CD9F02 /* PromoContentVC.swift in Sources */,
+				7BBA7B911E7AFFD700DA23F7 /* String+Extension.swift in Sources */,
 				7B7418731E7A23E900CD9F02 /* HomeVC.swift in Sources */,
+				7BBA7B8E1E7AFF3000DA23F7 /* Utility.swift in Sources */,
 				7B0DD7371E7AEA0E006F05DF /* PirateBay.xcdatamodeld in Sources */,
 				7BD54DA51E7A1595005466C7 /* AppDelegate.swift in Sources */,
 				7B0DD7341E7AE48F006F05DF /* CoreDataStack.swift in Sources */,
