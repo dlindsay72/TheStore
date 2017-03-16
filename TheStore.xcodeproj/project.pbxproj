@@ -7,33 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B7418711E7A23C900CD9F02 /* PromoContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */; };
+		7B7418731E7A23E900CD9F02 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7418721E7A23E900CD9F02 /* HomeVC.swift */; };
 		7BD54DA51E7A1595005466C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD54DA41E7A1595005466C7 /* AppDelegate.swift */; };
-		7BD54DA71E7A1595005466C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD54DA61E7A1595005466C7 /* ViewController.swift */; };
 		7BD54DAA1E7A1596005466C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD54DA81E7A1596005466C7 /* Main.storyboard */; };
 		7BD54DAC1E7A1596005466C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BD54DAB1E7A1596005466C7 /* Assets.xcassets */; };
 		7BD54DAF1E7A1596005466C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD54DAD1E7A1596005466C7 /* LaunchScreen.storyboard */; };
-		7BD54DC01E7A1F13005466C7 /* piratebattle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BD54DBA1E7A1F13005466C7 /* piratebattle.jpg */; };
 		7BD54DC11E7A1F13005466C7 /* piratebattle.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7BD54DBB1E7A1F13005466C7 /* piratebattle.pdf */; };
-		7BD54DC21E7A1F13005466C7 /* piratemap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BD54DBC1E7A1F13005466C7 /* piratemap.jpg */; };
 		7BD54DC31E7A1F13005466C7 /* piratemap.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7BD54DBD1E7A1F13005466C7 /* piratemap.pdf */; };
 		7BD54DC41E7A1F13005466C7 /* piratesofcaribbean.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7BD54DBE1E7A1F13005466C7 /* piratesofcaribbean.pdf */; };
-		7BD54DC51E7A1F13005466C7 /* piratesofcaribbeanposter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BD54DBF1E7A1F13005466C7 /* piratesofcaribbeanposter.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoContentVC.swift; sourceTree = "<group>"; };
+		7B7418721E7A23E900CD9F02 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		7BD54DA11E7A1595005466C7 /* TheStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD54DA41E7A1595005466C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BD54DA61E7A1595005466C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7BD54DA91E7A1596005466C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BD54DAB1E7A1596005466C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BD54DAE1E7A1596005466C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BD54DB01E7A1596005466C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BD54DBA1E7A1F13005466C7 /* piratebattle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratebattle.jpg; sourceTree = "<group>"; };
 		7BD54DBB1E7A1F13005466C7 /* piratebattle.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = piratebattle.pdf; sourceTree = "<group>"; };
-		7BD54DBC1E7A1F13005466C7 /* piratemap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratemap.jpg; sourceTree = "<group>"; };
 		7BD54DBD1E7A1F13005466C7 /* piratemap.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = piratemap.pdf; sourceTree = "<group>"; };
 		7BD54DBE1E7A1F13005466C7 /* piratesofcaribbean.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = piratesofcaribbean.pdf; sourceTree = "<group>"; };
-		7BD54DBF1E7A1F13005466C7 /* piratesofcaribbeanposter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piratesofcaribbeanposter.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +43,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B74186F1E7A239000CD9F02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		7BD54D981E7A1595005466C7 = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +69,11 @@
 		7BD54DA31E7A1595005466C7 /* TheStore */ = {
 			isa = PBXGroup;
 			children = (
-				7BD54DB91E7A1EF0005466C7 /* posters */,
-				7BD54DB81E7A1EA5005466C7 /* Controller */,
+				7BD54DB91E7A1EF0005466C7 /* assets */,
+				7B74186F1E7A239000CD9F02 /* Model */,
 				7BD54DB71E7A1E9D005466C7 /* View */,
 				7BD54DB61E7A1E96005466C7 /* Controller */,
-				7BD54DA41E7A1595005466C7 /* AppDelegate.swift */,
-				7BD54DA61E7A1595005466C7 /* ViewController.swift */,
-				7BD54DA81E7A1596005466C7 /* Main.storyboard */,
 				7BD54DAB1E7A1596005466C7 /* Assets.xcassets */,
-				7BD54DAD1E7A1596005466C7 /* LaunchScreen.storyboard */,
 				7BD54DB01E7A1596005466C7 /* Info.plist */,
 			);
 			path = TheStore;
@@ -83,6 +82,9 @@
 		7BD54DB61E7A1E96005466C7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7BD54DA41E7A1595005466C7 /* AppDelegate.swift */,
+				7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */,
+				7B7418721E7A23E900CD9F02 /* HomeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -90,28 +92,20 @@
 		7BD54DB71E7A1E9D005466C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7BD54DAD1E7A1596005466C7 /* LaunchScreen.storyboard */,
+				7BD54DA81E7A1596005466C7 /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
 		};
-		7BD54DB81E7A1EA5005466C7 /* Controller */ = {
+		7BD54DB91E7A1EF0005466C7 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		7BD54DB91E7A1EF0005466C7 /* posters */ = {
-			isa = PBXGroup;
-			children = (
-				7BD54DBA1E7A1F13005466C7 /* piratebattle.jpg */,
 				7BD54DBB1E7A1F13005466C7 /* piratebattle.pdf */,
-				7BD54DBC1E7A1F13005466C7 /* piratemap.jpg */,
 				7BD54DBD1E7A1F13005466C7 /* piratemap.pdf */,
 				7BD54DBE1E7A1F13005466C7 /* piratesofcaribbean.pdf */,
-				7BD54DBF1E7A1F13005466C7 /* piratesofcaribbeanposter.png */,
 			);
-			name = posters;
+			name = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,14 +168,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD54DC01E7A1F13005466C7 /* piratebattle.jpg in Resources */,
 				7BD54DAF1E7A1596005466C7 /* LaunchScreen.storyboard in Resources */,
 				7BD54DC41E7A1F13005466C7 /* piratesofcaribbean.pdf in Resources */,
 				7BD54DAC1E7A1596005466C7 /* Assets.xcassets in Resources */,
 				7BD54DC11E7A1F13005466C7 /* piratebattle.pdf in Resources */,
 				7BD54DAA1E7A1596005466C7 /* Main.storyboard in Resources */,
-				7BD54DC21E7A1F13005466C7 /* piratemap.jpg in Resources */,
-				7BD54DC51E7A1F13005466C7 /* piratesofcaribbeanposter.png in Resources */,
 				7BD54DC31E7A1F13005466C7 /* piratemap.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,7 +184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD54DA71E7A1595005466C7 /* ViewController.swift in Sources */,
+				7B7418711E7A23C900CD9F02 /* PromoContentVC.swift in Sources */,
+				7B7418731E7A23E900CD9F02 /* HomeVC.swift in Sources */,
 				7BD54DA51E7A1595005466C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +350,7 @@
 				7BD54DB51E7A1596005466C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

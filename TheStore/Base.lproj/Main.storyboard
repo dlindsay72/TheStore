@@ -13,7 +13,7 @@
         <!--The Store-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="TheStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -28,11 +28,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Gy-du-AbT" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="-64" width="1024" height="750"/>
                                         <subviews>
-                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brv-qL-aAL">
+                                            <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brv-qL-aAL">
                                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="350"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="350" id="4ep-J1-Lrg"/>
                                                 </constraints>
+                                                <connections>
+                                                    <segue destination="Eki-2j-QGw" kind="embed" id="YET-c6-AxP"/>
+                                                </connections>
                                             </containerView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LL0-hn-ahX" userLabel="Toy Collection View">
                                                 <rect key="frame" x="0.0" y="380" width="682.5" height="170"/>
@@ -184,10 +187,55 @@
                     <navigationItem key="navigationItem" title="The Store" id="kRc-Rg-q5M"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="900"/>
+                    <connections>
+                        <outlet property="pageView" destination="brv-qL-aAL" id="CbO-Bv-JX2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1454" y="-156"/>
+            <point key="canvasLocation" x="1112" y="-134"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="T8S-TX-wEb">
+            <objects>
+                <pageViewController storyboardIdentifier="promoPageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="Eki-2j-QGw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdX-21-hMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="-339"/>
+        </scene>
+        <!--Promo ContentVC-->
+        <scene sceneID="RBB-9J-xOJ">
+            <objects>
+                <viewController storyboardIdentifier="promoContentVC" id="FUH-ie-fDD" customClass="PromoContentVC" customModule="TheStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ffi-Zp-IkH"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Nd-yw-gUY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N0G-OE-Sdm">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="piratebattle" translatesAutoresizingMaskIntoConstraints="NO" id="Bdp-3A-EdP">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="Xmi-4X-9eh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Bdp-3A-EdP" secondAttribute="trailing" id="8pg-GQ-KUg"/>
+                            <constraint firstItem="Bdp-3A-EdP" firstAttribute="top" secondItem="N0G-OE-Sdm" secondAttribute="top" id="Sk3-D0-NgT"/>
+                            <constraint firstItem="Bdp-3A-EdP" firstAttribute="leading" secondItem="N0G-OE-Sdm" secondAttribute="leading" id="idv-0I-pRA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="promoImageView" destination="Bdp-3A-EdP" id="ars-ic-wWS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Z9-V8-ssa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805" y="258"/>
         </scene>
         <!--Item-->
         <scene sceneID="VgI-7L-bk6">
@@ -225,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUU-fF-bpH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992" y="998"/>
+            <point key="canvasLocation" x="354" y="1069"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DUH-bD-mx9">
@@ -246,4 +294,7 @@
             <point key="canvasLocation" x="-517" y="913"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="piratebattle" width="2350" height="804"/>
+    </resources>
 </document>
