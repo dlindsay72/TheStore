@@ -28,7 +28,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Gy-du-AbT" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="-64" width="1024" height="750"/>
                                         <subviews>
-                                            <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brv-qL-aAL">
+                                            <containerView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brv-qL-aAL">
                                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="350"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="350" id="4ep-J1-Lrg"/>
@@ -140,6 +140,11 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mzT-Wa-ocZ">
+                                                <rect key="frame" x="493" y="310" width="39" height="37"/>
+                                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="currentPageIndicatorTintColor" red="0.90446728467941284" green="0.048006400465965271" blue="0.2303440272808075" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </pageControl>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -152,6 +157,7 @@
                                             <constraint firstItem="yxY-TS-zNy" firstAttribute="leading" secondItem="LL0-hn-ahX" secondAttribute="trailing" id="ADk-Zo-PdO"/>
                                             <constraint firstAttribute="height" constant="750" id="FmV-iP-1yb"/>
                                             <constraint firstItem="5z7-mc-hpr" firstAttribute="leading" secondItem="Tjb-1e-4px" secondAttribute="leading" id="IbX-41-0wR"/>
+                                            <constraint firstItem="mzT-Wa-ocZ" firstAttribute="top" secondItem="brv-qL-aAL" secondAttribute="bottom" constant="-40" id="LHo-TQ-plO"/>
                                             <constraint firstItem="bFg-By-TGr" firstAttribute="top" secondItem="yxY-TS-zNy" secondAttribute="bottom" constant="5" id="LSe-cp-ybZ"/>
                                             <constraint firstItem="Tjb-1e-4px" firstAttribute="top" secondItem="brv-qL-aAL" secondAttribute="bottom" constant="15" id="OON-qH-SxU"/>
                                             <constraint firstItem="bFg-By-TGr" firstAttribute="leading" secondItem="9Gy-du-AbT" secondAttribute="leading" constant="15" id="ReP-kV-ipy"/>
@@ -159,6 +165,7 @@
                                             <constraint firstItem="brv-qL-aAL" firstAttribute="leading" secondItem="9Gy-du-AbT" secondAttribute="leading" id="VNJ-pF-jkE"/>
                                             <constraint firstItem="OCo-Kk-Xt7" firstAttribute="leading" secondItem="9Gy-du-AbT" secondAttribute="leading" id="W6g-JQ-Gap"/>
                                             <constraint firstItem="Tjb-1e-4px" firstAttribute="leading" secondItem="9Gy-du-AbT" secondAttribute="leading" constant="15" id="Yxs-5E-gW4"/>
+                                            <constraint firstItem="mzT-Wa-ocZ" firstAttribute="centerX" secondItem="9Gy-du-AbT" secondAttribute="centerX" id="b6l-Xw-FNj"/>
                                             <constraint firstItem="OCo-Kk-Xt7" firstAttribute="top" secondItem="5z7-mc-hpr" secondAttribute="bottom" constant="-15" id="eqv-el-8fv"/>
                                             <constraint firstAttribute="trailing" secondItem="OCo-Kk-Xt7" secondAttribute="trailing" id="qoR-aI-rwQ"/>
                                             <constraint firstItem="yxY-TS-zNy" firstAttribute="baseline" secondItem="LL0-hn-ahX" secondAttribute="baseline" id="r8m-gg-5FA"/>
@@ -188,6 +195,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="900"/>
                     <connections>
+                        <outlet property="pageControl" destination="mzT-Wa-ocZ" id="V53-za-lNc"/>
                         <outlet property="pageView" destination="brv-qL-aAL" id="CbO-Bv-JX2"/>
                     </connections>
                 </viewController>

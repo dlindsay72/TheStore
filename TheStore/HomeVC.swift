@@ -17,7 +17,7 @@ class HomeVC: UIViewController {
     //MARK: - IBOutlets
     
     @IBOutlet weak var pageView: UIView!
-    
+    @IBOutlet weak var pageControl: UIPageControl!
     // MARK: - Properties
     
     var pageViewController: UIPageViewController?
@@ -73,6 +73,7 @@ class HomeVC: UIViewController {
         let nextController = getViewController(atIndex: currentIndex)
         
         self.pageViewController?.setViewControllers([nextController], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
+        self.pageControl.currentPage = currentIndex
     }
     
 
