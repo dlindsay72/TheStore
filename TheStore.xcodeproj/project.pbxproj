@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7B0DD7321E7AE390006F05DF /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B0DD7311E7AE390006F05DF /* products.json */; };
+		7B0DD7341E7AE48F006F05DF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0DD7331E7AE48F006F05DF /* CoreDataStack.swift */; };
+		7B0DD7371E7AEA0E006F05DF /* PirateBay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B0DD7351E7AEA0E006F05DF /* PirateBay.xcdatamodeld */; };
 		7B7418711E7A23C900CD9F02 /* PromoContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */; };
 		7B7418731E7A23E900CD9F02 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7418721E7A23E900CD9F02 /* HomeVC.swift */; };
 		7BD54DA51E7A1595005466C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD54DA41E7A1595005466C7 /* AppDelegate.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		7B0DD7311E7AE390006F05DF /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		7B0DD7331E7AE48F006F05DF /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		7B0DD7361E7AEA0E006F05DF /* PirateBay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PirateBay.xcdatamodel; sourceTree = "<group>"; };
 		7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoContentVC.swift; sourceTree = "<group>"; };
 		7B7418721E7A23E900CD9F02 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		7BD54DA11E7A1595005466C7 /* TheStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +52,9 @@
 		7B74186F1E7A239000CD9F02 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7B0DD7331E7AE48F006F05DF /* CoreDataStack.swift */,
 				7B0DD7311E7AE390006F05DF /* products.json */,
+				7B0DD7351E7AEA0E006F05DF /* PirateBay.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -190,7 +196,9 @@
 			files = (
 				7B7418711E7A23C900CD9F02 /* PromoContentVC.swift in Sources */,
 				7B7418731E7A23E900CD9F02 /* HomeVC.swift in Sources */,
+				7B0DD7371E7AEA0E006F05DF /* PirateBay.xcdatamodeld in Sources */,
 				7BD54DA51E7A1595005466C7 /* AppDelegate.swift in Sources */,
+				7B0DD7341E7AE48F006F05DF /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +365,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7B0DD7351E7AEA0E006F05DF /* PirateBay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7B0DD7361E7AEA0E006F05DF /* PirateBay.xcdatamodel */,
+			);
+			currentVersion = 7B0DD7361E7AEA0E006F05DF /* PirateBay.xcdatamodel */;
+			path = PirateBay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7BD54D991E7A1595005466C7 /* Project object */;
 }
