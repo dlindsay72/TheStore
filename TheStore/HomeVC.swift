@@ -24,11 +24,14 @@ class HomeVC: UIViewController {
     let arrayPageImage = ["piratebattle", "piratemap", "piratesofcaribbean"]
     private let promoPageIdentifier = "promoPageVC"
     private let promoContentIdentifier = "promoContentVC"
+    var currentIndex = 0
     
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(HomeVC.loadNextController), userInfo: nil, repeats: true)
 
         setPageViewController()
     }
@@ -58,6 +61,18 @@ class HomeVC: UIViewController {
         promoContentVC.pageIndex = index
         
         return promoContentVC
+    }
+    
+    @objc private func loadNextController() {
+        currentIndex += 1
+        
+        if currentIndex == arrayPageImage.count {
+            currentIndex = 0
+        }
+        
+        let nextController = getViewController(atIndex: currentIndex)
+        
+        self.pageViewController?.setViewControllers([nextController], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
     }
     
 
