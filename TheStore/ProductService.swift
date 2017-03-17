@@ -25,6 +25,17 @@ struct ProductService {
             fatalError("Error getting product list: \(error.localizedDescription)")
         }
     }
+    
+    internal static func browse() -> [Product] {
+        let request: NSFetchRequest<Product> = Product.fetchRequest()
+        
+        do {
+            let products = try self.managedObjectContext.fetch(request)
+            return products
+        } catch let error as NSError {
+            fatalError("Error in getting all products: \(error.localizedDescription)")
+        }
+    }
 }
 
 
