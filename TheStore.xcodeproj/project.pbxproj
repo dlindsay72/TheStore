@@ -14,6 +14,9 @@
 		7B1BE93F1E7C3F62009FD97A /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BE93E1E7C3F62009FD97A /* ProductCollectionViewCell.swift */; };
 		7B7418711E7A23C900CD9F02 /* PromoContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */; };
 		7B7418731E7A23E900CD9F02 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7418721E7A23E900CD9F02 /* HomeVC.swift */; };
+		7BAC2BC11E7C48F50012C63D /* ProductsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC2BC01E7C48F50012C63D /* ProductsTableVC.swift */; };
+		7BAC2BC31E7C49200012C63D /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC2BC21E7C49200012C63D /* ProductsTableViewCell.swift */; };
+		7BAC2BC61E7C4B810012C63D /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC2BC51E7C4B810012C63D /* Double+Extension.swift */; };
 		7BBA7B5E1E7AFEFB00DA23F7 /* captainjake1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B221E7AFEFB00DA23F7 /* captainjake1.jpg */; };
 		7BBA7B5F1E7AFEFB00DA23F7 /* piratechest1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B241E7AFEFB00DA23F7 /* piratechest1.jpg */; };
 		7BBA7B601E7AFEFB00DA23F7 /* piratescurse1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA7B261E7AFEFB00DA23F7 /* piratescurse1.jpg */; };
@@ -79,6 +82,9 @@
 		7B1BE93E1E7C3F62009FD97A /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoContentVC.swift; sourceTree = "<group>"; };
 		7B7418721E7A23E900CD9F02 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		7BAC2BC01E7C48F50012C63D /* ProductsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableVC.swift; sourceTree = "<group>"; };
+		7BAC2BC21E7C49200012C63D /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
+		7BAC2BC51E7C4B810012C63D /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		7BBA7B221E7AFEFB00DA23F7 /* captainjake1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = captainjake1.jpg; sourceTree = "<group>"; };
 		7BBA7B241E7AFEFB00DA23F7 /* piratechest1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratechest1.jpg; sourceTree = "<group>"; };
 		7BBA7B261E7AFEFB00DA23F7 /* piratescurse1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piratescurse1.jpg; sourceTree = "<group>"; };
@@ -166,6 +172,31 @@
 				7B1BE93B1E7C3C35009FD97A /* ProductService.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		7BAC2BBE1E7C48C80012C63D /* browse */ = {
+			isa = PBXGroup;
+			children = (
+				7BAC2BC01E7C48F50012C63D /* ProductsTableVC.swift */,
+			);
+			name = browse;
+			sourceTree = "<group>";
+		};
+		7BAC2BBF1E7C48D20012C63D /* browse */ = {
+			isa = PBXGroup;
+			children = (
+				7BAC2BC21E7C49200012C63D /* ProductsTableViewCell.swift */,
+			);
+			name = browse;
+			sourceTree = "<group>";
+		};
+		7BAC2BC41E7C49360012C63D /* home */ = {
+			isa = PBXGroup;
+			children = (
+				7B7418721E7A23E900CD9F02 /* HomeVC.swift */,
+				7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */,
+			);
+			name = home;
 			sourceTree = "<group>";
 		};
 		7BBA7B201E7AFEFB00DA23F7 /* dvd */ = {
@@ -352,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				7BBA7B901E7AFFD700DA23F7 /* String+Extension.swift */,
+				7BAC2BC51E7C4B810012C63D /* Double+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -390,9 +422,9 @@
 		7BD54DB61E7A1E96005466C7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7BAC2BC41E7C49360012C63D /* home */,
+				7BAC2BBE1E7C48C80012C63D /* browse */,
 				7BD54DA41E7A1595005466C7 /* AppDelegate.swift */,
-				7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */,
-				7B7418721E7A23E900CD9F02 /* HomeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -400,6 +432,7 @@
 		7BD54DB71E7A1E9D005466C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7BAC2BBF1E7C48D20012C63D /* browse */,
 				7B1BE93D1E7C3F3F009FD97A /* home */,
 				7BD54DAD1E7A1596005466C7 /* LaunchScreen.storyboard */,
 				7BD54DA81E7A1596005466C7 /* Main.storyboard */,
@@ -550,7 +583,10 @@
 				7B0DD7371E7AEA0E006F05DF /* PirateBay.xcdatamodeld in Sources */,
 				7BD54DA51E7A1595005466C7 /* AppDelegate.swift in Sources */,
 				7B1BE93F1E7C3F62009FD97A /* ProductCollectionViewCell.swift in Sources */,
+				7BAC2BC61E7C4B810012C63D /* Double+Extension.swift in Sources */,
+				7BAC2BC31E7C49200012C63D /* ProductsTableViewCell.swift in Sources */,
 				7B0DD7341E7AE48F006F05DF /* CoreDataStack.swift in Sources */,
+				7BAC2BC11E7C48F50012C63D /* ProductsTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
