@@ -16,6 +16,8 @@ class ProductsTableViewCell: UITableViewCell {
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var manufacturerLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    
+    @IBOutlet weak var userRating: UserRating!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,6 +35,7 @@ class ProductsTableViewCell: UITableViewCell {
         productNameLabel.text = product.name
         manufacturerLabel.text = product.manufacturer?.name
         priceLabel.text = product.salePrice.currencyFormatter
+        userRating.rating = Int(product.rating)
     }
 
 }
