@@ -21,6 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         deleteProducts()
         loadProducts()
+        
+        let tabBarController = window?.rootViewController as! UITabBarController
+        
+        let splitVC = tabBarController.viewControllers?[1] as! UISplitViewController
+        let masterNavigation = splitVC.viewControllers[0] as! UINavigationController
+        let productsTableVC = masterNavigation.topViewController as! ProductsTableVC
+        let detailNavigation = splitVC.viewControllers[1] as! UINavigationController
+        let productDetailVC = detailNavigation.topViewController as! ProductDetailVC
+        
+        productsTableVC.delegate = productDetailVC
         return true
     }
 

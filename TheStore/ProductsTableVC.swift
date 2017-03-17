@@ -13,8 +13,10 @@ private let productCellIdentifier = "productCell"
 class ProductsTableVC: UITableViewController {
     
     // MARK: - Properties
+    
     var products: [Product]?
     var selectedProduct: Product?
+    weak var delegate: ProductDetailVC?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,27 +83,10 @@ class ProductsTableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedProduct = products?[indexPath.row]
+        delegate?.product = selectedProduct
         
         tableView.reloadData()
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
 
 }

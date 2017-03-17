@@ -299,10 +299,10 @@
             </objects>
             <point key="canvasLocation" x="-415" y="444"/>
         </scene>
-        <!--View Controller-->
+        <!--Product DetailVC-->
         <scene sceneID="Ddp-Cj-qnh">
             <objects>
-                <viewController id="Kxg-nQ-oc6" sceneMemberID="viewController">
+                <viewController id="Kxg-nQ-oc6" customClass="ProductDetailVC" customModule="TheStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xs2-ib-vgc"/>
                         <viewControllerLayoutGuide type="bottom" id="rLB-Ku-aXb"/>
@@ -317,7 +317,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKS-IO-Ck0" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="-64" width="1024" height="1000"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIl-hQ-ucF">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIl-hQ-ucF" customClass="DetailSummaryView" customModule="TheStore" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="450"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buccaneerboat4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Gqs-H0-z4s">
@@ -338,7 +338,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zxu-fK-QTe">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zxu-fK-QTe" customClass="UserRating" customModule="TheStore" customModuleProvider="target">
                                                         <rect key="frame" x="562" y="83" width="100" height="20"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -494,6 +494,20 @@ Gift-Wrap available.</string>
                                                     <constraint firstItem="4oQ-Le-xP2" firstAttribute="top" secondItem="ti3-3r-Vgr" secondAttribute="bottom" constant="20" id="yRH-7z-Pbf"/>
                                                     <constraint firstItem="T5Y-e2-mZ8" firstAttribute="leading" secondItem="k3J-mw-7hf" secondAttribute="leading" id="yzz-Wq-Z4l"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="addToCartButton" destination="39d-AU-bpb" id="6jb-EQ-W3O"/>
+                                                    <outlet property="dealPriceLabel" destination="goC-wM-Iy8" id="4oM-yz-Pag"/>
+                                                    <outlet property="inStockLabel" destination="TQU-rO-8Mz" id="0zl-4e-OH0"/>
+                                                    <outlet property="listPriceLabel" destination="dx4-zE-FwI" id="hmS-9K-Br1"/>
+                                                    <outlet property="manufacturerLabel" destination="Y9z-B0-2b1" id="nra-3b-xZM"/>
+                                                    <outlet property="priceSavedDollarLabel" destination="I7A-yV-rpt" id="xVy-G7-RyN"/>
+                                                    <outlet property="priceSavedPercentLabel" destination="uuU-tG-Bfv" id="RvP-jN-UXO"/>
+                                                    <outlet property="productImageView" destination="Gqs-H0-z4s" id="SH4-3p-tGP"/>
+                                                    <outlet property="productNameLabel" destination="KvL-yA-gvu" id="Oe7-As-qUm"/>
+                                                    <outlet property="qtyLeftLabel" destination="4i4-Bf-w7K" id="8L3-dJ-5YZ"/>
+                                                    <outlet property="quantityButton" destination="4oQ-Le-xP2" id="KMM-SW-4zg"/>
+                                                    <outlet property="userRating" destination="Zxu-fK-QTe" id="jW1-Sn-hOJ"/>
+                                                </connections>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -525,6 +539,9 @@ Gift-Wrap available.</string>
                     <navigationItem key="navigationItem" id="eJD-yP-9sc"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="1200"/>
+                    <connections>
+                        <outlet property="detailSummaryView" destination="CIl-hQ-ucF" id="0Vv-gu-fxZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbc-YG-BuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
