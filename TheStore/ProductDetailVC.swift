@@ -19,6 +19,10 @@ class ProductDetailVC: UIViewController {
     @IBOutlet weak var productDescriptionLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var shoppingCartButton: UIButton!
+    
+    @IBOutlet weak var cartItemCountLabel: UILabel!
+    
     // MARK: - Properties
     
     var product: Product? {
@@ -31,6 +35,7 @@ class ProductDetailVC: UIViewController {
     
     var specifications = [ProductInfo]()
     var quantity = 1
+    var shoppingCart = ShoppingCart.sharedInstance
     
     
     override func viewDidLoad() {
@@ -80,6 +85,31 @@ class ProductDetailVC: UIViewController {
         }
         
     }
+    
+    //MARK: - IBActions
+    
+    @IBAction func didTapAddToCart(_ sender: UIButton) {
+        if let product = product {
+            shoppingCart.add(product: product, qty: self.quantity)
+            
+            //Reset the quantity
+            self.quantity = 1
+            self.detailSummaryView.quantityButton.setTitle("Quantity: 1", for: .normal)
+            
+            UIView.animate(withDuration: 0.5, animations: { [weak self] in
+                self?.shoppingCartButton.layer.transform = CATransform3DMakeRotation(CGFloat(M_PI), 0.0, 1.0, 0.0)
+            })
+            
+            UIView.animate(withDuration: 0.5, animations: { [weak self] in
+                self?.shoppingCartButton.layer.transform = CATransform3DMakeRotation(CGFloat(M_PI) * 2, 0.0, 1.0, 0.0)
+                }, completion: { (success: Bool) in
+                DispatchQueue.main.async { [unowned self] in
+                    self.cartItemCountLabel.text = "\(self.shoppingCart.totalItem())"
+                }
+            })
+        }
+    }
+    
    
 
 }
