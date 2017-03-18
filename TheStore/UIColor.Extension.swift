@@ -12,4 +12,8 @@ extension UIColor {
     func store_brown() -> UIColor {
         return UIColor(colorLiteralRed: 206/255.0, green: 125/255.0, blue: 44/255.0, alpha: 1.0)
     }
+    
+    func store_green() -> UIColor {
+        return UIColor(colorLiteralRed: 56/255.0, green: 116/255.0, blue: 8/255.0, alpha: 1.0)
+    }
 }
