@@ -530,14 +530,13 @@ Gift-Wrap available.</string>
                                                             <constraint firstAttribute="height" constant="220" id="NXA-5E-kyh"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="productDescription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wCx-AY-rah">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="productDescription" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wCx-AY-rah">
                                                         <rect key="frame" x="274" y="8" width="690" height="234"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.94041508439999999" green="0.74692189689999999" blue="0.036367185410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="wCx-AY-rah" secondAttribute="bottom" constant="8" id="AoO-dT-Yf6"/>
                                                     <constraint firstItem="wCx-AY-rah" firstAttribute="leading" secondItem="2Uj-gl-Gu5" secondAttribute="trailing" constant="20" id="Kbq-oJ-cYM"/>
@@ -549,13 +548,16 @@ Gift-Wrap available.</string>
                                                     <constraint firstItem="2Uj-gl-Gu5" firstAttribute="centerY" secondItem="GAp-xw-35Z" secondAttribute="centerY" id="unZ-I7-8Nb"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Specification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-7K-te2">
-                                                <rect key="frame" x="20" y="789" width="188" height="23"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Specification" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-7K-te2">
+                                                <rect key="frame" x="20" y="789" width="187.5" height="21.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="188" id="sgB-1G-boX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                 <color key="textColor" red="0.55206054449999997" green="0.070677973330000005" blue="0.25057768819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qKg-CD-KTk">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qKg-CD-KTk">
                                                 <rect key="frame" x="279" y="789" width="725" height="300"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -563,17 +565,17 @@ Gift-Wrap available.</string>
                                                 </constraints>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="productInfoCell" id="nFo-if-1YC" customClass="ProductInfoTableViewCell" customModule="TheStore" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="725" height="44"/>
+                                                        <rect key="frame" x="0.0" y="28" width="725" height="60"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nFo-if-1YC" id="hen-Nc-Bgf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="725" height="43"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="725" height="59"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAR-eM-aWT">
-                                                                    <rect key="frame" x="15" y="0.0" width="200" height="43"/>
+                                                                    <rect key="frame" x="15" y="0.0" width="200" height="59"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="infoTitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXE-qR-dlZ">
-                                                                            <rect key="frame" x="8" y="13" width="54.5" height="18"/>
+                                                                            <rect key="frame" x="8" y="20.5" width="54.5" height="18"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -587,7 +589,7 @@ Gift-Wrap available.</string>
                                                                     </constraints>
                                                                 </view>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="productSpec" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubW-qt-oWh">
-                                                                    <rect key="frame" x="223" y="13" width="474" height="18"/>
+                                                                    <rect key="frame" x="223" y="20.5" width="474" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>

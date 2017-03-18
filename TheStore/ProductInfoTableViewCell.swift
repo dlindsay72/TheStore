@@ -10,8 +10,21 @@ import UIKit
 
 class ProductInfoTableViewCell: UITableViewCell {
     
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var infoTitleLabel: UILabel!
     @IBOutlet weak var productSpecLabel: UILabel!
+    
+    // MARK: - Properties
+    var productInfo: ProductInfo? {
+        didSet {
+            if let currentInfo = productInfo {
+                configureCell(with: currentInfo)
+            }
+        }
+    }
+    
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +35,11 @@ class ProductInfoTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    private func configureCell(with productInfo: ProductInfo) {
+        infoTitleLabel.text = productInfo.title
+        productSpecLabel.text = productInfo.info
     }
 
 }
