@@ -30,6 +30,7 @@ class ProductDetailVC: UIViewController {
     }
     
     var specifications = [ProductInfo]()
+    var quantity = 1
     
     
     override func viewDidLoad() {
@@ -65,6 +66,20 @@ class ProductDetailVC: UIViewController {
             tableView.reloadData()
         }
     }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            switch identifier {
+            case "segueQuantity":
+                let quantityTVC = segue.destination as! QuantityTableVC
+                quantityTVC.delegate = self
+            default:
+                break
+            }
+        }
+        
+    }
    
 
 }
@@ -88,7 +103,13 @@ extension ProductDetailVC: UITableViewDataSource {
         return cell
     }
     
-    
+}
+
+extension ProductDetailVC: QuantityPopoverDelegate {
+    func updateProductToBuy(withQuantity quantity: Int) {
+        self.quantity = quantity
+        detailSummaryView.quantityButton.setTitle("Quantity: \(self.quantity)", for: .normal)
+    }
 }
 
 
