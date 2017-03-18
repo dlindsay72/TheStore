@@ -14,6 +14,7 @@
 		7B1BE93F1E7C3F62009FD97A /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1BE93E1E7C3F62009FD97A /* ProductCollectionViewCell.swift */; };
 		7B447D4F1E7C51B400FE58FF /* UIColor.Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B447D4E1E7C51B400FE58FF /* UIColor.Extension.swift */; };
 		7B447D511E7C56FA00FE58FF /* UserRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B447D501E7C56FA00FE58FF /* UserRating.swift */; };
+		7B71975A1E7DBD8700493D45 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7197591E7DBD8700493D45 /* ShoppingCart.swift */; };
 		7B7418711E7A23C900CD9F02 /* PromoContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */; };
 		7B7418731E7A23E900CD9F02 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7418721E7A23E900CD9F02 /* HomeVC.swift */; };
 		7B8C7E211E7CB1D3000B0C7F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C7E201E7CB1D3000B0C7F /* UIImage+Extension.swift */; };
@@ -90,6 +91,7 @@
 		7B1BE93E1E7C3F62009FD97A /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		7B447D4E1E7C51B400FE58FF /* UIColor.Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.Extension.swift; sourceTree = "<group>"; };
 		7B447D501E7C56FA00FE58FF /* UserRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRating.swift; sourceTree = "<group>"; };
+		7B7197591E7DBD8700493D45 /* ShoppingCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 		7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoContentVC.swift; sourceTree = "<group>"; };
 		7B7418721E7A23E900CD9F02 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		7B8C7E201E7CB1D3000B0C7F /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				7B0DD7311E7AE390006F05DF /* products.json */,
 				7B0DD7351E7AEA0E006F05DF /* PirateBay.xcdatamodeld */,
 				7B1BE93B1E7C3C35009FD97A /* ProductService.swift */,
+				7B7197591E7DBD8700493D45 /* ShoppingCart.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 				7BD54DA51E7A1595005466C7 /* AppDelegate.swift in Sources */,
 				7B447D4F1E7C51B400FE58FF /* UIColor.Extension.swift in Sources */,
 				7B1BE93F1E7C3F62009FD97A /* ProductCollectionViewCell.swift in Sources */,
+				7B71975A1E7DBD8700493D45 /* ShoppingCart.swift in Sources */,
 				7BAC2BC61E7C4B810012C63D /* Double+Extension.swift in Sources */,
 				7BAC2BC31E7C49200012C63D /* ProductsTableViewCell.swift in Sources */,
 				7BD0288A1E7D8D4B007D29FA /* ProductInfoTableViewCell.swift in Sources */,
