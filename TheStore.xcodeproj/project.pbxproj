@@ -69,6 +69,7 @@
 		7BBA7B8E1E7AFF3000DA23F7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBA7B8D1E7AFF3000DA23F7 /* Utility.swift */; };
 		7BBA7B911E7AFFD700DA23F7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBA7B901E7AFFD700DA23F7 /* String+Extension.swift */; };
 		7BD0288A1E7D8D4B007D29FA /* ProductInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD028891E7D8D4B007D29FA /* ProductInfoTableViewCell.swift */; };
+		7BD0288C1E7D9BE9007D29FA /* QuantityTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD0288B1E7D9BE9007D29FA /* QuantityTableVC.swift */; };
 		7BD54DA51E7A1595005466C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD54DA41E7A1595005466C7 /* AppDelegate.swift */; };
 		7BD54DAA1E7A1596005466C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD54DA81E7A1596005466C7 /* Main.storyboard */; };
 		7BD54DAC1E7A1596005466C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BD54DAB1E7A1596005466C7 /* Assets.xcassets */; };
@@ -144,6 +145,7 @@
 		7BBA7B8D1E7AFF3000DA23F7 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		7BBA7B901E7AFFD700DA23F7 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		7BD028891E7D8D4B007D29FA /* ProductInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductInfoTableViewCell.swift; sourceTree = "<group>"; };
+		7BD0288B1E7D9BE9007D29FA /* QuantityTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuantityTableVC.swift; sourceTree = "<group>"; };
 		7BD54DA11E7A1595005466C7 /* TheStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD54DA41E7A1595005466C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD54DA91E7A1596005466C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				7BAC2BC01E7C48F50012C63D /* ProductsTableVC.swift */,
 				7BFBC6FB1E7C768A00EE78EC /* ProductDetailVC.swift */,
+				7BD0288B1E7D9BE9007D29FA /* QuantityTableVC.swift */,
 			);
 			name = browse;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				7BBA7B911E7AFFD700DA23F7 /* String+Extension.swift in Sources */,
 				7B7418731E7A23E900CD9F02 /* HomeVC.swift in Sources */,
 				7BBA7B8E1E7AFF3000DA23F7 /* Utility.swift in Sources */,
+				7BD0288C1E7D9BE9007D29FA /* QuantityTableVC.swift in Sources */,
 				7B0DD7371E7AEA0E006F05DF /* PirateBay.xcdatamodeld in Sources */,
 				7BD54DA51E7A1595005466C7 /* AppDelegate.swift in Sources */,
 				7B447D4F1E7C51B400FE58FF /* UIColor.Extension.swift in Sources */,

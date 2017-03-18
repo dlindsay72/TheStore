@@ -262,6 +262,63 @@
             </objects>
             <point key="canvasLocation" x="1805" y="258"/>
         </scene>
+        <!--Quantity TableVC-->
+        <scene sceneID="wXg-tb-i5p">
+            <objects>
+                <tableViewController id="Rid-iq-Ebw" customClass="QuantityTableVC" customModule="TheStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="WHN-Xd-BY9">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="450"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellQuantity" textLabel="rDu-Sm-i42" style="IBUITableViewCellStyleDefault" id="LWY-bo-L8z">
+                                <rect key="frame" x="0.0" y="28" width="100" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LWY-bo-L8z" id="32p-bn-6wB">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rDu-Sm-i42">
+                                            <rect key="frame" x="15" y="0.0" width="70" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellTenPlus" textLabel="DGi-lq-4H8" style="IBUITableViewCellStyleDefault" id="ShF-OS-XqO">
+                                <rect key="frame" x="0.0" y="72" width="100" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ShF-OS-XqO" id="RGU-rY-scY">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="10+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DGi-lq-4H8">
+                                            <rect key="frame" x="15" y="0.0" width="70" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Rid-iq-Ebw" id="WfP-En-JAM"/>
+                            <outlet property="delegate" destination="Rid-iq-Ebw" id="gOL-MW-hfx"/>
+                        </connections>
+                    </tableView>
+                    <value key="contentSizeForViewInPopover" type="size" width="100" height="450"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="100" height="450"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFN-4L-7g0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550" y="1530"/>
+        </scene>
         <!--Home-->
         <scene sceneID="VgI-7L-bk6">
             <objects>
@@ -437,6 +494,11 @@ Gift-Wrap available.</string>
                                                                 <color key="value" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="Rid-iq-Ebw" kind="popoverPresentation" identifier="segueQuantity" popoverAnchorView="4oQ-Le-xP2" id="by8-bt-cdv">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                            </segue>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39d-AU-bpb" customClass="MyButton" customModule="TheStore" customModuleProvider="target">
                                                         <rect key="frame" x="562" y="387" width="200" height="40"/>
@@ -568,7 +630,7 @@ Gift-Wrap available.</string>
                                                         <rect key="frame" x="0.0" y="28" width="725" height="60"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nFo-if-1YC" id="hen-Nc-Bgf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="725" height="59"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="725" height="60"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAR-eM-aWT">
