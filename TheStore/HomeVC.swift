@@ -10,6 +10,8 @@ import UIKit
 
 private let toyCell = "toyCell"
 private let dvdCell = "dvdCell"
+private let promoPageIdentifier = "promoPageVC"
+private let promoContentIdentifier = "promoContentVC"
 
 class HomeVC: UIViewController {
     
@@ -28,12 +30,13 @@ class HomeVC: UIViewController {
     
     var pageViewController: UIPageViewController?
     let arrayPageImage = ["piratebattle", "piratemap", "piratesofcaribbean"]
-    private let promoPageIdentifier = "promoPageVC"
-    private let promoContentIdentifier = "promoContentVC"
-    
     var currentIndex = 0
     var toysCollection = [Product]()
     var dvdCollection = [Product]()
+    var selectedProduct: Product?
+    var productsInSelectedCategory: [Product]?
+    var productTVC: ProductsTableVC?
+    
     
     
     // MARK: - Lifecycle
@@ -184,6 +187,28 @@ extension HomeVC: UICollectionViewDataSource {
     }
     
     
+}
+
+// MARK: - UICollectionViewDelegate
+
+extension HomeVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch collectionView {
+        case self.toyCollectionView:
+            selectedProduct = toysCollection[indexPath.row]
+            productsInSelectedCategory = toysCollection
+        case self.dvdCollectionView:
+            selectedProduct = dvdCollection[indexPath.row]
+            productsInSelectedCategory = dvdCollection
+        default:
+            print("Nothing has been picked")
+        }
+        
+        self.productTVC?.products = productsInSelectedCategory
+        self.productTVC?.selectedProduct = selectedProduct
+        
+        self.parent?.tabBarController?.selectedIndex = 1
+    }
 }
 
 

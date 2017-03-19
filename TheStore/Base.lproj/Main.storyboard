@@ -275,11 +275,11 @@
                                 <rect key="frame" x="0.0" y="28" width="100" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LWY-bo-L8z" id="32p-bn-6wB">
-                                    <rect key="frame" x="0.0" y="0.0" width="100" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rDu-Sm-i42">
-                                            <rect key="frame" x="15" y="0.0" width="70" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="70" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -292,11 +292,11 @@
                                 <rect key="frame" x="0.0" y="72" width="100" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ShF-OS-XqO" id="RGU-rY-scY">
-                                    <rect key="frame" x="0.0" y="0.0" width="100" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="10+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DGi-lq-4H8">
-                                            <rect key="frame" x="15" y="0.0" width="70" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="70" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -782,7 +782,7 @@ Gift-Wrap available.</string>
                                 <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2uN-If-lPB" id="FgY-mQ-zzM">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buccaneerboat1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-uv-IxP">

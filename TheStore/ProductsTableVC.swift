@@ -18,6 +18,9 @@ class ProductsTableVC: UITableViewController {
     var selectedProduct: Product?
     weak var delegate: ProductDetailVC?
 
+    
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,13 +30,27 @@ class ProductsTableVC: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        self.products = ProductService.browse()
+        self.navigationItem.title = "Products"
         
-        if let products = self.products {
-            selectedProduct = products.first
+        if let products = self.products, products.count > 0 {
+            self.navigationItem.title = (products.first?.type?.uppercased())!
+        } else {
+            self.products = ProductService.browse()
+            
+            if let products = self.products {
+                selectedProduct = products.first
+            }
         }
         
         tableView.reloadData()
+        tableView.tableFooterView = UIView()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.products?.removeAll()
+        self.selectedProduct = nil
+        self.delegate?.product = nil
+        
     }
 
     override func didReceiveMemoryWarning() {

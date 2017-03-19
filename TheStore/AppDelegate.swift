@@ -31,6 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let productDetailVC = detailNavigation.topViewController as! ProductDetailVC
         
         productsTableVC.delegate = productDetailVC
+        
+        let homeNavigation = tabBarController.viewControllers?[0] as! UINavigationController
+        let homeVC = homeNavigation.topViewController as! HomeVC
+        
+        homeVC.productTVC = productsTableVC
         return true
     }
 
