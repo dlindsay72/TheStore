@@ -8,6 +8,8 @@
 
 import UIKit
 
+private let startCheckoutSegueIdentifier = "startCheckoutSegue"
+
 class LoginVC: UIViewController {
     
     // MARK: IBOutlets
