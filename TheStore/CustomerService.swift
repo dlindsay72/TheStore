@@ -32,5 +32,20 @@ struct CustomerService {
         
     }
     
+    static internal func addCustomer(name: String, email: String, password: String) -> Customer {
+        let customer = Customer(context: managedObjectContext)
+        
+        customer.name = name
+        customer.email = email
+        customer.password = password
+        
+        do {
+            try managedObjectContext.save()
+            return customer
+        } catch let error as NSError {
+            fatalError("Error creating a new customer: \(error.localizedDescription)")
+        }
+    }
+    
 }
 

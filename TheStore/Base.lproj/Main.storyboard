@@ -476,6 +476,9 @@
                                         <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ugP-Ov-2dN" kind="show" identifier="newCustomerSegue" id="LpY-Kc-109"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -521,6 +524,147 @@
             </objects>
             <point key="canvasLocation" x="2921" y="1220"/>
         </scene>
+        <!--New Customer-->
+        <scene sceneID="2rh-oO-sME">
+            <objects>
+                <viewController title="New Customer" id="ugP-Ov-2dN" customClass="NewCustomerVC" customModule="TheStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xcb-Io-1XK"/>
+                        <viewControllerLayoutGuide type="bottom" id="dk9-ix-kcA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wQL-BH-GSb">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgP-Y3-7M8">
+                                <rect key="frame" x="120.5" y="104" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aDN-BS-W05">
+                                <rect key="frame" x="120.5" y="145" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ggl-qq-sDm"/>
+                                    <constraint firstAttribute="height" constant="40" id="o7l-ml-hQ2"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ge-wT-M3k">
+                                <rect key="frame" x="120.5" y="193" width="300" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Create a password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nuw-Ib-XXe">
+                                <rect key="frame" x="120.5" y="241" width="300" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYW-av-EW9" customClass="MyButton" customModule="TheStore" customModuleProvider="target">
+                                <rect key="frame" x="120.5" y="301" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.67724466319999999" green="0.37840545180000001" blue="0.00017444389230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.94041508436203003" green="0.74692189693450928" blue="0.036367185413837433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="yUJ-Wx-KCi" kind="show" identifier="segueAddAddress" id="a9i-fa-DQN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02A-D3-We0" customClass="MyButton" customModule="TheStore" customModuleProvider="target">
+                                <rect key="frame" x="120.5" y="429" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign in now">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="d6I-h3-G1z" kind="unwind" unwindAction="unwindFromCreateAccountWithSegue:" id="pkm-eB-ZqU"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3B-gl-JwG">
+                                <rect key="frame" x="90" y="401" width="360" height="1"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ghY-IK-mBu"/>
+                                    <constraint firstAttribute="width" constant="360" id="r4h-X5-xc0"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3V-e2-GCv">
+                                <rect key="frame" x="195" y="395.5" width="150" height="13.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="orK-rw-zHE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="02A-D3-We0" firstAttribute="leading" secondItem="YYW-av-EW9" secondAttribute="leading" id="AFN-bl-A5v"/>
+                            <constraint firstItem="lgP-Y3-7M8" firstAttribute="top" secondItem="xcb-Io-1XK" secondAttribute="bottom" constant="40" id="BmF-pL-IC9"/>
+                            <constraint firstItem="aDN-BS-W05" firstAttribute="centerX" secondItem="wQL-BH-GSb" secondAttribute="centerX" id="El5-00-pgX"/>
+                            <constraint firstItem="2ge-wT-M3k" firstAttribute="width" secondItem="aDN-BS-W05" secondAttribute="width" id="FKO-bg-f95"/>
+                            <constraint firstItem="nuw-Ib-XXe" firstAttribute="width" secondItem="2ge-wT-M3k" secondAttribute="width" id="IMm-tr-bet"/>
+                            <constraint firstItem="YYW-av-EW9" firstAttribute="width" secondItem="nuw-Ib-XXe" secondAttribute="width" id="Iwa-zc-2zC"/>
+                            <constraint firstItem="YYW-av-EW9" firstAttribute="height" secondItem="nuw-Ib-XXe" secondAttribute="height" id="JU4-RI-wE5"/>
+                            <constraint firstItem="YYW-av-EW9" firstAttribute="top" secondItem="nuw-Ib-XXe" secondAttribute="bottom" constant="20" id="LyJ-eT-DGk"/>
+                            <constraint firstItem="M3V-e2-GCv" firstAttribute="centerY" secondItem="d3B-gl-JwG" secondAttribute="centerY" id="PZ4-dK-f6E"/>
+                            <constraint firstItem="nuw-Ib-XXe" firstAttribute="height" secondItem="2ge-wT-M3k" secondAttribute="height" id="TmV-vo-f91"/>
+                            <constraint firstItem="aDN-BS-W05" firstAttribute="top" secondItem="lgP-Y3-7M8" secondAttribute="bottom" constant="20" id="VKk-V4-mOr"/>
+                            <constraint firstItem="02A-D3-We0" firstAttribute="height" secondItem="YYW-av-EW9" secondAttribute="height" id="Y7W-nz-SkB"/>
+                            <constraint firstItem="02A-D3-We0" firstAttribute="top" secondItem="M3V-e2-GCv" secondAttribute="bottom" constant="20" id="YLb-nc-yfP"/>
+                            <constraint firstItem="02A-D3-We0" firstAttribute="width" secondItem="YYW-av-EW9" secondAttribute="width" id="Yed-7c-BmQ"/>
+                            <constraint firstItem="d3B-gl-JwG" firstAttribute="centerX" secondItem="wQL-BH-GSb" secondAttribute="centerX" id="dYf-kM-3Ub"/>
+                            <constraint firstItem="d3B-gl-JwG" firstAttribute="top" secondItem="YYW-av-EW9" secondAttribute="bottom" constant="60" id="dwd-3t-Hih"/>
+                            <constraint firstItem="nuw-Ib-XXe" firstAttribute="leading" secondItem="2ge-wT-M3k" secondAttribute="leading" id="h0z-g7-j17"/>
+                            <constraint firstItem="2ge-wT-M3k" firstAttribute="height" secondItem="aDN-BS-W05" secondAttribute="height" id="kQV-Ge-1My"/>
+                            <constraint firstItem="lgP-Y3-7M8" firstAttribute="leading" secondItem="aDN-BS-W05" secondAttribute="leading" id="lVn-hb-Weq"/>
+                            <constraint firstItem="nuw-Ib-XXe" firstAttribute="top" secondItem="2ge-wT-M3k" secondAttribute="bottom" constant="8" id="tyd-SY-im3"/>
+                            <constraint firstItem="YYW-av-EW9" firstAttribute="leading" secondItem="nuw-Ib-XXe" secondAttribute="leading" id="vVe-N8-nnd"/>
+                            <constraint firstItem="2ge-wT-M3k" firstAttribute="top" secondItem="aDN-BS-W05" secondAttribute="bottom" constant="8" id="vdi-KZ-Cs7"/>
+                            <constraint firstItem="M3V-e2-GCv" firstAttribute="centerX" secondItem="wQL-BH-GSb" secondAttribute="centerX" id="yFD-aT-PWk"/>
+                            <constraint firstItem="2ge-wT-M3k" firstAttribute="leading" secondItem="aDN-BS-W05" secondAttribute="leading" id="zMV-Wr-r0w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="2ge-wT-M3k" id="6R9-Ih-She"/>
+                        <outlet property="nameTextField" destination="aDN-BS-W05" id="5b0-qK-F3p"/>
+                        <outlet property="passwordTextField" destination="nuw-Ib-XXe" id="1YH-6I-4Q9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CmX-2S-vBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="d6I-h3-G1z" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3281" y="1627"/>
+        </scene>
         <!--AddressVC-->
         <scene sceneID="F7R-5K-fJN">
             <objects>
@@ -537,7 +681,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8hJ-QI-ADy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3469" y="1191"/>
+            <point key="canvasLocation" x="3626" y="1220"/>
         </scene>
         <!--Home-->
         <scene sceneID="VgI-7L-bk6">
@@ -853,7 +997,7 @@ Gift-Wrap available.</string>
                                                         <rect key="frame" x="0.0" y="28" width="725" height="60"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nFo-if-1YC" id="hen-Nc-Bgf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="725" height="59"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="725" height="60"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAR-eM-aWT">
@@ -1005,7 +1149,7 @@ Gift-Wrap available.</string>
                                 <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2uN-If-lPB" id="FgY-mQ-zzM">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buccaneerboat1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-uv-IxP">
@@ -1173,4 +1317,7 @@ Gift-Wrap available.</string>
         <image name="shopping-cart" width="44" height="44"/>
         <image name="toydrive.png" width="347" height="181"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="a9i-fa-DQN"/>
+    </inferredMetricsTieBreakers>
 </document>
