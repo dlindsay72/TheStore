@@ -79,6 +79,10 @@ class ProductDetailVC: UIViewController {
             case "segueQuantity":
                 let quantityTVC = segue.destination as! QuantityTableVC
                 quantityTVC.delegate = self
+            case "shoppingCartSegue":
+                let navController = segue.destination as! UINavigationController
+                let cartTVC = navController.topViewController as! CartTableVC
+                cartTVC.cartDelegate = self
             default:
                 break
             }
@@ -135,12 +139,47 @@ extension ProductDetailVC: UITableViewDataSource {
     
 }
 
+/// MARK: - QuantityPopoverDelegate
+
 extension ProductDetailVC: QuantityPopoverDelegate {
     func updateProductToBuy(withQuantity quantity: Int) {
         self.quantity = quantity
         detailSummaryView.quantityButton.setTitle("Quantity: \(self.quantity)", for: .normal)
     }
 }
+
+// MARK: - ShoppingCartDelegate
+
+
+extension ProductDetailVC: ShoppingCartDelegate {
+    func updateTotalCartItem() {
+        cartItemCountLabel.text = "\(shoppingCart.totalItem())"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

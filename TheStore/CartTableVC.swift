@@ -21,7 +21,7 @@ class CartTableVC: UITableViewController {
     //MARK: Properties
     
     var shoppingCart = ShoppingCart.sharedInstance
-    
+    weak var cartDelegate: ShoppingCartDelegate?
     
 
     override func viewDidLoad() {
@@ -73,6 +73,8 @@ class CartTableVC: UITableViewController {
             cell.item = item
             cell.itemIndexPath = indexPath
             
+            cell.delegate = self
+            
             return cell
         case 1:
             tableView.rowHeight = 40
@@ -109,3 +111,58 @@ class CartTableVC: UITableViewController {
     
 
 }
+
+// MARK: - ShoppingCartDelegate
+
+extension CartTableVC: ShoppingCartDelegate {
+    func updateTotalCartItem() {
+        // invoke delegate in ProductDetailVC to update the number of items in cart
+        cartDelegate?.updateTotalCartItem()
+        checkoutButton.isEnabled = shoppingCart.totalItem() > 0 ? true : false
+        
+        tableView.reloadData()
+    }
+    
+    func confirmRemoval(forProduct product: Product, itemIndexPath: IndexPath) {
+        let alertController = UIAlertController(title: "Remove Item", message: "Remove \(product.name!.uppercased()) from your shopping cart?", preferredStyle: .actionSheet)
+        
+        let removeAction = UIAlertAction(title: "Remove", style: .destructive) { [weak self] (action: UIAlertAction) in
+            self?.shoppingCart.delete(product: product)
+            self?.tableView.deleteRows(at: [itemIndexPath], with: .fade)
+            self?.tableView.reloadData()
+            
+            self?.updateTotalCartItem()
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alertController.addAction(removeAction)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
