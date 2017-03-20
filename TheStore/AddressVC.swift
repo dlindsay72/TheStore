@@ -12,7 +12,6 @@ class AddressVC: UIViewController {
     
     // MARK: IBOutlets
     
-    
     @IBOutlet weak var addressPickerView: UIPickerView!
     @IBOutlet weak var fullnameTextField: UITextField!
     @IBOutlet weak var address1TextField: UITextField!
@@ -26,11 +25,29 @@ class AddressVC: UIViewController {
     
     //MARK: - Properties
     var customer: Customer?
+    var addresses = [Address]()
+    var selectedAddress: Address?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        addressPickerView.isHidden = false
+        noAddressLabel.isHidden = true
+        
+        if let customer = customer {
+            addresses = CustomerService.addressList(forCustomer: customer)
+            
+            if addresses.count == 0 {
+                addressPickerView.isHidden = true
+                noAddressLabel.isHidden = false
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,3 +67,49 @@ class AddressVC: UIViewController {
     */
 
 }
+
+// MARK: - UIPickerView DataSource and Delegate
+
+extension AddressVC: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return addresses.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let address = addresses[row]
+        
+        return "\(address.address1) \(address.address2), \(address.city), \(address.state) \(address.zip)"
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedAddress = addresses[row]
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
