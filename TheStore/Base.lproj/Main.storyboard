@@ -514,11 +514,30 @@
                     <connections>
                         <outlet property="emailTextField" destination="d8I-P2-fqs" id="Moo-QP-3nd"/>
                         <outlet property="passwordTextField" destination="joc-RK-IdA" id="xDv-vb-k0M"/>
+                        <segue destination="yUJ-Wx-KCi" kind="show" identifier="shipAddressSegue" id="WMY-3h-T1W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Okt-um-ToA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2921" y="1220"/>
+        </scene>
+        <!--AddressVC-->
+        <scene sceneID="F7R-5K-fJN">
+            <objects>
+                <viewController id="yUJ-Wx-KCi" customClass="AddressVC" customModule="TheStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bdx-k0-syF"/>
+                        <viewControllerLayoutGuide type="bottom" id="sTJ-yQ-xRn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rez-LQ-dnA">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8hJ-QI-ADy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3469" y="1191"/>
         </scene>
         <!--Home-->
         <scene sceneID="VgI-7L-bk6">
@@ -834,7 +853,7 @@ Gift-Wrap available.</string>
                                                         <rect key="frame" x="0.0" y="28" width="725" height="60"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nFo-if-1YC" id="hen-Nc-Bgf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="725" height="60"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="725" height="59"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAR-eM-aWT">
@@ -986,7 +1005,7 @@ Gift-Wrap available.</string>
                                 <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2uN-If-lPB" id="FgY-mQ-zzM">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buccaneerboat1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-uv-IxP">

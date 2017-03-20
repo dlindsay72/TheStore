@@ -9,6 +9,7 @@
 import UIKit
 
 private let startCheckoutSegueIdentifier = "startCheckoutSegue"
+private let shipAddressSegueIdentifier = "shipAddressSegue"
 
 class LoginVC: UIViewController {
     
@@ -16,6 +17,9 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    // MARK: Properties
+    var customer: Customer?
     
 
     override func viewDidLoad() {
@@ -30,26 +34,52 @@ class LoginVC: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let identifier = segue.identifier {
+            switch identifier {
+                case shipAddressSegueIdentifier:
+                    let addressController = segue.destination as! AddressVC
+                    addressController.customer = customer
+                default:
+                    break
+            }
+        }
     }
-    */
+ 
     
     // MARK: - IBActions
     
     
     @IBAction func didTapCancel(_ sender: UIBarButtonItem) {
-        
+       dismiss(animated: true, completion: nil)
     }
     
     
     @IBAction func didTapSignIn(_ sender: MyButton) {
+        guard let email = emailTextField.text, let password = passwordTextField.text else {
+            return
+        }
         
+        customer = CustomerService.verify(username: email, password: password)
+        
+        if customer != nil {
+            performSegue(withIdentifier: shipAddressSegueIdentifier, sender: self)
+        } else {
+            let alertController = UIAlertController(title: "Login Failed", message: "We do not recognize your email and/or password. \nPlease try again.", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: { [weak self] (action: UIAlertAction) in
+                DispatchQueue.main.async {
+                    self?.emailTextField.text = ""
+                    self?.passwordTextField.text = ""
+                }
+            })
+            
+            alertController.addAction(okAction)
+            present(alertController, animated: true, completion: nil)
+        }
     }
     
     
