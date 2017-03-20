@@ -9,6 +9,8 @@
 import UIKit
 
 private let cartSegueIdentifier = "shoppingCartSegue"
+private let cellItemInCartIdentifier = "cellItemInCart"
+private let cellSummaryIdentifier = "cellSummary"
 
 class CartTableVC: UITableViewController {
     
@@ -25,6 +27,7 @@ class CartTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.register(UINib(nibName: "ItemInCartCell", bundle: nil), forCellReuseIdentifier: cellItemInCartIdentifier)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +59,35 @@ class CartTableVC: UITableViewController {
             return 0
         }
         
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let section = indexPath.section
+        
+        switch section {
+        case 0:
+            tableView.rowHeight = 80
+            
+            let item = shoppingCart.items[indexPath.row]
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellItemInCartIdentifier, for: indexPath) as! ItemInCartCell
+            cell.item = item
+            cell.itemIndexPath = indexPath
+            
+            return cell
+        case 1:
+            tableView.rowHeight = 40
+            
+            //Subtotal ( xx items) ... $$$
+            let itemStr = shoppingCart.items.count == 1 ? "items" : "items"
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellSummaryIdentifier, for: indexPath)
+            cell.textLabel?.text = "Subtotal (\(shoppingCart.totalItem()) \(itemStr))"
+            
+            cell.detailTextLabel?.text = shoppingCart.totalItemCost().currencyFormatter
+            
+            return cell
+        default:
+            return UITableViewCell()
+        }
     }
     
     // MARK: - TableViewDelegate
