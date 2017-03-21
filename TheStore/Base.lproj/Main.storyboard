@@ -1186,6 +1186,47 @@
             </objects>
             <point key="canvasLocation" x="4189" y="1189"/>
         </scene>
+        <!--Expiration-->
+        <scene sceneID="KSb-Nx-aNl">
+            <objects>
+                <tableViewController storyboardIdentifier="popoverInfo" title="Expiration" id="wky-tY-ZpL" customClass="PopoverTableVC" customModule="TheStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gkX-sg-fmn">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="540"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellExpiration" textLabel="fXG-Ei-j3s" style="IBUITableViewCellStyleDefault" id="Isj-f4-uVA">
+                                <rect key="frame" x="0.0" y="28" width="200" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Isj-f4-uVA" id="LH7-j5-PKm">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fXG-Ei-j3s">
+                                            <rect key="frame" x="15" y="0.0" width="170" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wky-tY-ZpL" id="V9Z-tX-5D8"/>
+                            <outlet property="delegate" destination="wky-tY-ZpL" id="uOL-yz-5TX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="3v8-5p-Jmy"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="200" height="540"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="540"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDu-EP-iVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4664" y="1184"/>
+        </scene>
         <!--Home-->
         <scene sceneID="VgI-7L-bk6">
             <objects>
@@ -1500,7 +1541,7 @@ Gift-Wrap available.</string>
                                                         <rect key="frame" x="0.0" y="28" width="725" height="60"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nFo-if-1YC" id="hen-Nc-Bgf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="725" height="59"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="725" height="60"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAR-eM-aWT">
@@ -1806,6 +1847,27 @@ Gift-Wrap available.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K9L-hX-2Hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2469" y="1248"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Yz-LN-Sty">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pi2-m8-VDd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <value key="contentSizeForViewInPopover" type="size" width="200" height="540"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="540"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="avy-J2-V2j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wky-tY-ZpL" kind="relationship" relationship="rootViewController" id="gBF-bz-GxF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKL-Mb-jGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4479" y="1184"/>
         </scene>
     </scenes>
     <resources>
