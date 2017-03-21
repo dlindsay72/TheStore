@@ -17,10 +17,12 @@
 		7B42DD001E8051FA00DF979D /* AddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B42DCFF1E8051FA00DF979D /* AddressVC.swift */; };
 		7B447D4F1E7C51B400FE58FF /* UIColor.Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B447D4E1E7C51B400FE58FF /* UIColor.Extension.swift */; };
 		7B447D511E7C56FA00FE58FF /* UserRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B447D501E7C56FA00FE58FF /* UserRating.swift */; };
+		7B4B46CF1E81C61E00216321 /* NewCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4B46CE1E81C61E00216321 /* NewCardTableViewCell.swift */; };
 		7B54AC4D1E8045EE0024245B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54AC4C1E8045EE0024245B /* LoginVC.swift */; };
 		7B5662941E7F3779002C822F /* CartTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5662931E7F3779002C822F /* CartTableVC.swift */; };
 		7B5662981E7F3B6B002C822F /* ItemInCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5662961E7F3B6B002C822F /* ItemInCartCell.swift */; };
 		7B5662991E7F3B6B002C822F /* ItemInCartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B5662971E7F3B6B002C822F /* ItemInCartCell.xib */; };
+		7B70CC481E81C0B1006664C0 /* ExistingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70CC471E81C0B1006664C0 /* ExistingTableViewCell.swift */; };
 		7B71975A1E7DBD8700493D45 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7197591E7DBD8700493D45 /* ShoppingCart.swift */; };
 		7B7418711E7A23C900CD9F02 /* PromoContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */; };
 		7B7418731E7A23E900CD9F02 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7418721E7A23E900CD9F02 /* HomeVC.swift */; };
@@ -102,10 +104,12 @@
 		7B42DCFF1E8051FA00DF979D /* AddressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressVC.swift; sourceTree = "<group>"; };
 		7B447D4E1E7C51B400FE58FF /* UIColor.Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.Extension.swift; sourceTree = "<group>"; };
 		7B447D501E7C56FA00FE58FF /* UserRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRating.swift; sourceTree = "<group>"; };
+		7B4B46CE1E81C61E00216321 /* NewCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCardTableViewCell.swift; sourceTree = "<group>"; };
 		7B54AC4C1E8045EE0024245B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7B5662931E7F3779002C822F /* CartTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableVC.swift; sourceTree = "<group>"; };
 		7B5662961E7F3B6B002C822F /* ItemInCartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemInCartCell.swift; sourceTree = "<group>"; };
 		7B5662971E7F3B6B002C822F /* ItemInCartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemInCartCell.xib; sourceTree = "<group>"; };
+		7B70CC471E81C0B1006664C0 /* ExistingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingTableViewCell.swift; sourceTree = "<group>"; };
 		7B7197591E7DBD8700493D45 /* ShoppingCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 		7B7418701E7A23C900CD9F02 /* PromoContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoContentVC.swift; sourceTree = "<group>"; };
 		7B7418721E7A23E900CD9F02 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -202,7 +206,6 @@
 			children = (
 				7B42DCFF1E8051FA00DF979D /* AddressVC.swift */,
 				7BB87BAB1E80756200D83C69 /* NewCustomerVC.swift */,
-				7B3AA8C51E817D5400A214CD /* PaymentVC.swift */,
 			);
 			name = Customer;
 			sourceTree = "<group>";
@@ -230,6 +233,23 @@
 				7B5662971E7F3B6B002C822F /* ItemInCartCell.xib */,
 			);
 			name = CartCheckout;
+			sourceTree = "<group>";
+		};
+		7B70CC451E81C033006664C0 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				7B3AA8C51E817D5400A214CD /* PaymentVC.swift */,
+			);
+			name = Payment;
+			sourceTree = "<group>";
+		};
+		7B70CC461E81C081006664C0 /* payment */ = {
+			isa = PBXGroup;
+			children = (
+				7B70CC471E81C0B1006664C0 /* ExistingTableViewCell.swift */,
+				7B4B46CE1E81C61E00216321 /* NewCardTableViewCell.swift */,
+			);
+			name = payment;
 			sourceTree = "<group>";
 		};
 		7B74186F1E7A239000CD9F02 /* Model */ = {
@@ -500,6 +520,7 @@
 		7BD54DB61E7A1E96005466C7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7B70CC451E81C033006664C0 /* Payment */,
 				7B42DCFE1E8051E500DF979D /* Customer */,
 				7B54AC4B1E8045D30024245B /* Login */,
 				7B5662921E7F3758002C822F /* CartCheckout */,
@@ -513,6 +534,7 @@
 		7BD54DB71E7A1E9D005466C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7B70CC461E81C081006664C0 /* payment */,
 				7B5662951E7F3B26002C822F /* CartCheckout */,
 				7BAC2BBF1E7C48D20012C63D /* browse */,
 				7B1BE93D1E7C3F3F009FD97A /* home */,
@@ -669,11 +691,13 @@
 			files = (
 				7BB87BAC1E80756200D83C69 /* NewCustomerVC.swift in Sources */,
 				7B7418711E7A23C900CD9F02 /* PromoContentVC.swift in Sources */,
+				7B4B46CF1E81C61E00216321 /* NewCardTableViewCell.swift in Sources */,
 				7B1BE93C1E7C3C35009FD97A /* ProductService.swift in Sources */,
 				7B54AC4D1E8045EE0024245B /* LoginVC.swift in Sources */,
 				7BFBC6FE1E7C76AD00EE78EC /* DetailSummaryView.swift in Sources */,
 				7B3AA8C61E817D5400A214CD /* PaymentVC.swift in Sources */,
 				7B8C7E211E7CB1D3000B0C7F /* UIImage+Extension.swift in Sources */,
+				7B70CC481E81C0B1006664C0 /* ExistingTableViewCell.swift in Sources */,
 				7BFBC6FA1E7C722A00EE78EC /* MyButton.swift in Sources */,
 				7BBA7B911E7AFFD700DA23F7 /* String+Extension.swift in Sources */,
 				7B42DD001E8051FA00DF979D /* AddressVC.swift in Sources */,

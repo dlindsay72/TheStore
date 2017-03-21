@@ -16,5 +16,11 @@ extension String {
         }
         return self
     }
+    
+    func maskedPlusLast4() -> String {
+        let last4CardNumber = self.substring(from: self.index(self.endIndex, offsetBy: -4))
+        
+        return "****\(last4CardNumber)"
+    }
 }
 

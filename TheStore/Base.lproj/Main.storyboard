@@ -898,7 +898,7 @@
                                         <rect key="frame" x="0.0" y="28" width="500" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B6h-TC-XC6" id="kSN-qW-Z8I">
-                                            <rect key="frame" x="0.0" y="0.0" width="500" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="500" height="30"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your credit card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6n-8b-5mJ">
@@ -930,11 +930,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="cellCreditCard" rowHeight="30" id="zJX-lt-kUX">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="cellCreditCard" rowHeight="30" id="zJX-lt-kUX" customClass="ExistingTableViewCell" customModule="TheStore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="58" width="500" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zJX-lt-kUX" id="eD1-Ia-OuC">
-                                            <rect key="frame" x="0.0" y="0.0" width="461" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="461" height="30"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amex" translatesAutoresizingMaskIntoConstraints="NO" id="m9F-l6-qj7">
@@ -988,12 +988,19 @@
                                                 <constraint firstItem="m9F-l6-qj7" firstAttribute="centerY" secondItem="eD1-Ia-OuC" secondAttribute="centerY" id="nta-QU-da8"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="carNumberLabel" destination="9a1-pp-GhV" id="Nck-Kr-lWg"/>
+                                            <outlet property="cardTypeImageView" destination="m9F-l6-qj7" id="3S3-4F-K6W"/>
+                                            <outlet property="expirationLabel" destination="T4g-US-MYa" id="Dqq-aY-3jL"/>
+                                            <outlet property="nameOnCardLabel" destination="C4u-fz-ghy" id="33S-hC-bdv"/>
+                                            <outlet property="noCreditCardLabel" destination="shV-Xi-QJq" id="wE8-vh-E7h"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellAddCardTitle" rowHeight="50" id="xOT-6H-wtZ">
                                         <rect key="frame" x="0.0" y="88" width="500" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xOT-6H-wtZ" id="xVN-IP-IzV">
-                                            <rect key="frame" x="0.0" y="0.0" width="500" height="49"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="500" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXB-9H-uMf">
@@ -1009,11 +1016,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="qp0-Yw-Jnf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="qp0-Yw-Jnf" customClass="NewCardTableViewCell" customModule="TheStore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="138" width="500" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qp0-Yw-Jnf" id="iMe-3Y-wSO">
-                                            <rect key="frame" x="0.0" y="0.0" width="500" height="199"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="500" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AEM-LR-4Rl">
@@ -1053,6 +1060,9 @@
                                                             <color key="value" red="0.94041508436203003" green="0.74692189693450928" blue="0.036367185413837433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="didTapAddCard:" destination="qp0-Yw-Jnf" eventType="touchUpInside" id="UKH-xT-tXd"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiration date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXS-zD-oLc">
                                                     <rect key="frame" x="10" y="91" width="115" height="21"/>
@@ -1122,6 +1132,12 @@
                                                 <constraint firstItem="AEM-LR-4Rl" firstAttribute="top" secondItem="iMe-3Y-wSO" secondAttribute="top" id="uaF-oL-AnF"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cardNumberTextField" destination="5A6-6x-0Py" id="yRE-7K-fHP"/>
+                                            <outlet property="expirationMonthButton" destination="tT7-3b-S6d" id="w8W-4j-u8z"/>
+                                            <outlet property="expirationYearButton" destination="dV2-bm-sAS" id="GoO-ju-xej"/>
+                                            <outlet property="nameOnCardTextField" destination="AEM-LR-4Rl" id="Y8l-Nn-xmw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -1484,7 +1500,7 @@ Gift-Wrap available.</string>
                                                         <rect key="frame" x="0.0" y="28" width="725" height="60"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nFo-if-1YC" id="hen-Nc-Bgf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="725" height="60"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="725" height="59"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAR-eM-aWT">

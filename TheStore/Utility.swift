@@ -20,4 +20,11 @@ class Utility {
         
         return image!
     }
+    
+    class func currentYear() -> Int {
+        let calendar = Calendar.current
+        let currentYear = calendar.component(Calendar.Component.year, from: Date())
+        
+        return currentYear
+    }
 }
