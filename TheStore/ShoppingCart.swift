@@ -16,6 +16,9 @@ import UIKit
 class ShoppingCart {
     
     var items = [(product: Product, qty: Int)]()
+    var customer: Customer?
+    var creditCard: CreditCard?
+    var shippingadress: Address?
     
     static let sharedInstance = ShoppingCart()
     private init() {}
@@ -65,9 +68,34 @@ class ShoppingCart {
         return totalCost
     }
     
+    internal func assignCart(toCustomer customer: Customer) {
+        self.customer = customer
+    }
+    
+    internal func assignShipping(address: Address) {
+        self.shippingadress = address
+    }
+    
     private func find(product: Product) -> Int? {
         let index = items.index(where: { $0.product == product})
         
         return index
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

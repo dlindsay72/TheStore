@@ -8,6 +8,8 @@
 
 import UIKit
 
+private let cartToPaymentSegueIdentifier = "paymentSegue"
+
 class AddressVC: UIViewController {
     
     // MARK: IBOutlets
@@ -28,6 +30,7 @@ class AddressVC: UIViewController {
     var addresses = [Address]()
     var selectedAddress: Address?
     var activeTextField: UITextField?
+    var shoppingCart = ShoppingCart.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,15 +84,41 @@ class AddressVC: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let identifier = segue.identifier {
+            switch identifier {
+            case cartToPaymentSegueIdentifier:
+                if let customer = customer {
+                    shoppingCart.assignCart(toCustomer: customer)
+                    
+                    var address: Address
+                    
+                    if !(address1TextField.text?.isEmpty)! {
+                        address = CustomerService.addAddress(forCustomer: customer, address1: address1TextField.text!, address2: address2TextField.text!, city: cityTextField.text!, state: stateTextField.text!, zip: zipTextField.text!, phone: phoneTextField.text!)
+                        
+                        shoppingCart.assignShipping(address: address)
+                    } else {
+                        if selectedAddress == nil {
+                            selectedAddress = addresses[self.addressPickerView.selectedRow(inComponent: 0)]
+                            
+                        }
+                        
+                        shoppingCart.assignShipping(address: selectedAddress!)
+                    }
+                    
+                    let paymentController = segue.destination as! PaymentVC
+                    paymentController.customer = customer
+                }
+            default:
+                break
+            }
+        }
     }
-    */
+ 
 
 }
 
