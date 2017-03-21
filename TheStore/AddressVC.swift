@@ -27,11 +27,12 @@ class AddressVC: UIViewController {
     var customer: Customer?
     var addresses = [Address]()
     var selectedAddress: Address?
+    var activeTextField: UITextField?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        registerForKeyboardNotification()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,6 +54,30 @@ class AddressVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: Private Functions
+    
+    private func registerForKeyboardNotification() {
+        let notificationCenter = NotificationCenter.default
+        
+        notificationCenter.addObserver(self, selector: #selector(AddressVC.keyboardIsOn(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(AddressVC.keyboardIsOff(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    
+    @objc private func keyboardIsOn(sender: Notification) {
+        let info: NSDictionary = sender.userInfo! as NSDictionary
+        let value: NSValue = info.value(forKey: UIKeyboardFrameBeginUserInfoKey) as! NSValue
+        let keyboardSize = value.cgRectValue.size
+        
+        let contentInsets: UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height - 50, 0.0)
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
+    }
+    
+    @objc private func keyboardIsOff(sender: Notification) {
+        scrollView.setContentOffset(CGPoint(x: 0, y: -50), animated: true)
+        scrollView.isScrollEnabled = false
     }
     
 
@@ -91,7 +116,22 @@ extension AddressVC: UIPickerViewDelegate, UIPickerViewDataSource {
     }
 }
 
+// MARK: - UITextField Delegate
 
+extension AddressVC: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        activeTextField = textField
+        scrollView.isScrollEnabled = true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        activeTextField = nil
+        
+        return true
+    }
+}
 
 
 
