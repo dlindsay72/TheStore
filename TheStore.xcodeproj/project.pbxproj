@@ -18,6 +18,17 @@
 		7B447D4F1E7C51B400FE58FF /* UIColor.Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B447D4E1E7C51B400FE58FF /* UIColor.Extension.swift */; };
 		7B447D511E7C56FA00FE58FF /* UserRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B447D501E7C56FA00FE58FF /* UserRating.swift */; };
 		7B4571A81E831D0D0011E1F7 /* OrderConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4571A71E831D0D0011E1F7 /* OrderConfirmationVC.swift */; };
+		7B4571B51E83220E0011E1F7 /* PirateBay-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4571AA1E83220E0011E1F7 /* PirateBay-Logo.png */; };
+		7B4571B61E83220E0011E1F7 /* PirateBay20.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4571AB1E83220E0011E1F7 /* PirateBay20.png */; };
+		7B4571B71E83220E0011E1F7 /* PirateBay200.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4571AC1E83220E0011E1F7 /* PirateBay200.png */; };
+		7B4571B81E83220E0011E1F7 /* PirateBay20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4571AD1E83220E0011E1F7 /* PirateBay20@2x.png */; };
+		7B4571B91E83220E0011E1F7 /* PirateBay29.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4571AE1E83220E0011E1F7 /* PirateBay29.png */; };
+		7B4571BA1E83220E0011E1F7 /* PirateBay29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4571AF1E83220E0011E1F7 /* PirateBay29@2x.png */; };
+		7B4571BB1E83220E0011E1F7 /* PirateBay40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4571B01E83220E0011E1F7 /* PirateBay40.png */; };
+		7B4571BC1E83220E0011E1F7 /* PirateBay40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4571B11E83220E0011E1F7 /* PirateBay40@2x.png */; };
+		7B4571BD1E83220E0011E1F7 /* PirateBay76.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4571B21E83220E0011E1F7 /* PirateBay76.png */; };
+		7B4571BE1E83220E0011E1F7 /* PirateBay76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4571B31E83220E0011E1F7 /* PirateBay76@2x.png */; };
+		7B4571BF1E83220E0011E1F7 /* PirateBay835@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4571B41E83220E0011E1F7 /* PirateBay835@2x.png */; };
 		7B4AC4651E81D48E0007FDBB /* PopoverTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4AC4641E81D48E0007FDBB /* PopoverTableVC.swift */; };
 		7B4B46CF1E81C61E00216321 /* NewCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4B46CE1E81C61E00216321 /* NewCardTableViewCell.swift */; };
 		7B54AC4D1E8045EE0024245B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54AC4C1E8045EE0024245B /* LoginVC.swift */; };
@@ -110,6 +121,17 @@
 		7B447D4E1E7C51B400FE58FF /* UIColor.Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.Extension.swift; sourceTree = "<group>"; };
 		7B447D501E7C56FA00FE58FF /* UserRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRating.swift; sourceTree = "<group>"; };
 		7B4571A71E831D0D0011E1F7 /* OrderConfirmationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderConfirmationVC.swift; sourceTree = "<group>"; };
+		7B4571AA1E83220E0011E1F7 /* PirateBay-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PirateBay-Logo.png"; sourceTree = "<group>"; };
+		7B4571AB1E83220E0011E1F7 /* PirateBay20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PirateBay20.png; sourceTree = "<group>"; };
+		7B4571AC1E83220E0011E1F7 /* PirateBay200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PirateBay200.png; sourceTree = "<group>"; };
+		7B4571AD1E83220E0011E1F7 /* PirateBay20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PirateBay20@2x.png"; sourceTree = "<group>"; };
+		7B4571AE1E83220E0011E1F7 /* PirateBay29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PirateBay29.png; sourceTree = "<group>"; };
+		7B4571AF1E83220E0011E1F7 /* PirateBay29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PirateBay29@2x.png"; sourceTree = "<group>"; };
+		7B4571B01E83220E0011E1F7 /* PirateBay40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PirateBay40.png; sourceTree = "<group>"; };
+		7B4571B11E83220E0011E1F7 /* PirateBay40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PirateBay40@2x.png"; sourceTree = "<group>"; };
+		7B4571B21E83220E0011E1F7 /* PirateBay76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PirateBay76.png; sourceTree = "<group>"; };
+		7B4571B31E83220E0011E1F7 /* PirateBay76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PirateBay76@2x.png"; sourceTree = "<group>"; };
+		7B4571B41E83220E0011E1F7 /* PirateBay835@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PirateBay835@2x.png"; sourceTree = "<group>"; };
 		7B4AC4641E81D48E0007FDBB /* PopoverTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverTableVC.swift; sourceTree = "<group>"; };
 		7B4B46CE1E81C61E00216321 /* NewCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCardTableViewCell.swift; sourceTree = "<group>"; };
 		7B54AC4C1E8045EE0024245B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -226,6 +248,24 @@
 				7B4571A71E831D0D0011E1F7 /* OrderConfirmationVC.swift */,
 			);
 			name = orderConfirmation;
+			sourceTree = "<group>";
+		};
+		7B4571A91E83220E0011E1F7 /* AppLaunch_Icon */ = {
+			isa = PBXGroup;
+			children = (
+				7B4571AA1E83220E0011E1F7 /* PirateBay-Logo.png */,
+				7B4571AB1E83220E0011E1F7 /* PirateBay20.png */,
+				7B4571AC1E83220E0011E1F7 /* PirateBay200.png */,
+				7B4571AD1E83220E0011E1F7 /* PirateBay20@2x.png */,
+				7B4571AE1E83220E0011E1F7 /* PirateBay29.png */,
+				7B4571AF1E83220E0011E1F7 /* PirateBay29@2x.png */,
+				7B4571B01E83220E0011E1F7 /* PirateBay40.png */,
+				7B4571B11E83220E0011E1F7 /* PirateBay40@2x.png */,
+				7B4571B21E83220E0011E1F7 /* PirateBay76.png */,
+				7B4571B31E83220E0011E1F7 /* PirateBay76@2x.png */,
+				7B4571B41E83220E0011E1F7 /* PirateBay835@2x.png */,
+			);
+			path = AppLaunch_Icon;
 			sourceTree = "<group>";
 		};
 		7B54AC4B1E8045D30024245B /* Login */ = {
@@ -578,6 +618,7 @@
 		7BD54DB91E7A1EF0005466C7 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				7B4571A91E83220E0011E1F7 /* AppLaunch_Icon */,
 				7BFBC6F81E7C721A00EE78EC /* button */,
 				7BBA7B201E7AFEFB00DA23F7 /* dvd */,
 				7BBA7B3C1E7AFEFB00DA23F7 /* toy */,
@@ -656,13 +697,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4571BC1E83220E0011E1F7 /* PirateBay40@2x.png in Resources */,
 				7BD54DAF1E7A1596005466C7 /* LaunchScreen.storyboard in Resources */,
 				7BD54DC41E7A1F13005466C7 /* piratesofcaribbean.pdf in Resources */,
+				7B4571B71E83220E0011E1F7 /* PirateBay200.png in Resources */,
 				7BBA7B6E1E7AFEFB00DA23F7 /* piratetides5.jpg in Resources */,
 				7BBA7B7B1E7AFEFB00DA23F7 /* littletikes1.jpg in Resources */,
+				7B4571BD1E83220E0011E1F7 /* PirateBay76.png in Resources */,
 				7BBA7B6B1E7AFEFB00DA23F7 /* piratetides2.jpg in Resources */,
 				7BBA7B691E7AFEFB00DA23F7 /* piratesilicon1.jpg in Resources */,
 				7B0DD7321E7AE390006F05DF /* products.json in Resources */,
+				7B4571B51E83220E0011E1F7 /* PirateBay-Logo.png in Resources */,
 				7BBA7B811E7AFEFB00DA23F7 /* popupPirate2.jpg in Resources */,
 				7BBA7B871E7AFEFB00DA23F7 /* sharkbiteship2.jpg in Resources */,
 				7BBA7B831E7AFEFB00DA23F7 /* popupPirate4.jpg in Resources */,
@@ -672,6 +717,7 @@
 				7B5662991E7F3B6B002C822F /* ItemInCartCell.xib in Resources */,
 				7BBA7B821E7AFEFB00DA23F7 /* popupPirate3.jpg in Resources */,
 				7BBA7B7E1E7AFEFB00DA23F7 /* littletikes4.jpg in Resources */,
+				7B4571BF1E83220E0011E1F7 /* PirateBay835@2x.png in Resources */,
 				7BBA7B851E7AFEFB00DA23F7 /* popupPirate6.jpg in Resources */,
 				7BBA7B601E7AFEFB00DA23F7 /* piratescurse1.jpg in Resources */,
 				7BBA7B721E7AFEFB00DA23F7 /* buccaneerboat2.jpg in Resources */,
@@ -681,10 +727,13 @@
 				7BBA7B5F1E7AFEFB00DA23F7 /* piratechest1.jpg in Resources */,
 				7BBA7B6F1E7AFEFB00DA23F7 /* piratetides6.jpg in Resources */,
 				7BBA7B881E7AFEFB00DA23F7 /* sharkbiteship3.jpg in Resources */,
+				7B4571BE1E83220E0011E1F7 /* PirateBay76@2x.png in Resources */,
 				7BBA7B621E7AFEFB00DA23F7 /* piratefairy2.jpg in Resources */,
 				7BBA7B711E7AFEFB00DA23F7 /* buccaneerboat1.jpg in Resources */,
 				7BBA7B661E7AFEFB00DA23F7 /* pirates4.jpg in Resources */,
+				7B4571B61E83220E0011E1F7 /* PirateBay20.png in Resources */,
 				7BBA7B791E7AFEFB00DA23F7 /* jakeneverland4.jpg in Resources */,
+				7B4571B91E83220E0011E1F7 /* PirateBay29.png in Resources */,
 				7BBA7B5E1E7AFEFB00DA23F7 /* captainjake1.jpg in Resources */,
 				7BBA7B771E7AFEFB00DA23F7 /* jakeneverland2.jpg in Resources */,
 				7BBA7B8B1E7AFEFB00DA23F7 /* toydrive.png in Resources */,
@@ -695,6 +744,7 @@
 				7BD54DAA1E7A1596005466C7 /* Main.storyboard in Resources */,
 				7BBA7B611E7AFEFB00DA23F7 /* piratefairy1.jpg in Resources */,
 				7BBA7B701E7AFEFB00DA23F7 /* scooby1.jpg in Resources */,
+				7B4571B81E83220E0011E1F7 /* PirateBay20@2x.png in Resources */,
 				7BBA7B861E7AFEFB00DA23F7 /* sharkbiteship1.jpg in Resources */,
 				7BBA7B671E7AFEFB00DA23F7 /* pirates5.jpg in Resources */,
 				7BBA7B7A1E7AFEFB00DA23F7 /* jakeneverland5.jpg in Resources */,
@@ -702,8 +752,10 @@
 				7BBA7B891E7AFEFB00DA23F7 /* sharkbiteship4.jpg in Resources */,
 				7BBA7B781E7AFEFB00DA23F7 /* jakeneverland3.jpg in Resources */,
 				7BBA7B8A1E7AFEFB00DA23F7 /* sharkbiteship5.jpg in Resources */,
+				7B4571BA1E83220E0011E1F7 /* PirateBay29@2x.png in Resources */,
 				7BBA7B741E7AFEFB00DA23F7 /* buccaneerboat4.jpg in Resources */,
 				7BBA7B651E7AFEFB00DA23F7 /* pirates3.jpg in Resources */,
+				7B4571BB1E83220E0011E1F7 /* PirateBay40.png in Resources */,
 				7BBA7B6D1E7AFEFB00DA23F7 /* piratetides4.jpg in Resources */,
 				7BBA7B841E7AFEFB00DA23F7 /* popupPirate5.jpg in Resources */,
 				7BBA7B631E7AFEFB00DA23F7 /* pirates1.jpg in Resources */,
