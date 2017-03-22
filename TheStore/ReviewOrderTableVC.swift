@@ -9,95 +9,142 @@
 import UIKit
 
 private let placeOrderCellIdentifier = "placeOrderCell"
-private let cellItemIdentifier = "cellItem"
+private let cellItemInCartIdentifier = "cellItemInCart"
 private let cellOrderTotalIdentifier = "cellOrderTotal"
 private let cellShippingIdentifier = "cellShipping"
 private let cellPaymentIdentifier = "cellPayment"
+//private let cellItemInCartXibIdentifier = "cellItemInCart"
 
 
 
 class ReviewOrderTableVC: UITableViewController {
+    
+    //MARK: Properties
+    var shoppingCart = ShoppingCart.sharedInstance
+    weak var reviewDelegate: ShoppingCartDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        tableView.register(UINib(nibName: "ItemInCartCell", bundle: nil), forCellReuseIdentifier: "blah") //might be the cellItemIdentifier and not the XibIdentifier
+        tableView.tableFooterView = UIView()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 6
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        switch section {
+        case 0, 2, 3, 4, 5:
+            return 1
+        case 1:
+            return shoppingCart.items.count
+        default:
+            return 0
+        }
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        switch indexPath.section {
+        case 0, 5:
+            tableView.rowHeight = 60
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: placeOrderCellIdentifier, for: indexPath)
+            return cell
+            
+        case 1:
+            tableView.rowHeight = 80
+            
+            let item = shoppingCart.items[indexPath.row]
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "blah", for: indexPath) as! ItemInCartCell
+            cell.item = item
+            cell.itemIndexPath = indexPath
+            cell.delegate = self
+            
+            return cell
+            
+        case 2:
+            tableView.rowHeight = 60
+            
+            let itemStr = shoppingCart.items.count == 1 ? "item" : "items"
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellOrderTotalIdentifier, for: indexPath)
+            cell.textLabel?.text = "Subtotal: \(shoppingCart.totalItem()) \(itemStr))"
+            cell.detailTextLabel?.text = shoppingCart.totalItemCost().currencyFormatter
+            
+            return cell
+            
+        case 3:
+            tableView.rowHeight = 135
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellShippingIdentifier, for: indexPath) as! ShippingTableViewCell
+            cell.configureCell()
+            
+            return cell
+            
+        case 4:
+            tableView.rowHeight = 70
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellPaymentIdentifier, for: indexPath) as! PaymentTableViewCell
+            cell.configureCell()
+            
+            return cell
+            
+        default:
+            return UITableViewCell()
+        }
 
-        // Configure the cell...
-
-        return cell
+        
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+extension ReviewOrderTableVC: ShoppingCartDelegate {
+    func updateTotalCartItem() {
+        // invoke delegate in ProductDetailVC to update the number of items in cart
+        reviewDelegate?.updateTotalCartItem()
+       
+        
+        tableView.reloadData()
+    }
+    
+    func confirmRemoval(forProduct product: Product, itemIndexPath: IndexPath) {
+        let alertController = UIAlertController(title: "Remove Item", message: "Remove \(product.name!.uppercased()) from your shopping cart?", preferredStyle: .actionSheet)
+        
+        let removeAction = UIAlertAction(title: "Remove", style: .destructive) { [weak self] (action: UIAlertAction) in
+            self?.shoppingCart.delete(product: product)
+            self?.tableView.deleteRows(at: [itemIndexPath], with: .fade)
+            self?.tableView.reloadData()
+            
+            self?.updateTotalCartItem()
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alertController.addAction(removeAction)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

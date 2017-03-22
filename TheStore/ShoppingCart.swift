@@ -18,7 +18,7 @@ class ShoppingCart {
     var items = [(product: Product, qty: Int)]()
     var customer: Customer?
     var creditCard: CreditCard?
-    var shippingadress: Address?
+    var shippingAddress: Address?
     
     static let sharedInstance = ShoppingCart()
     private init() {}
@@ -73,7 +73,7 @@ class ShoppingCart {
     }
     
     internal func assignShipping(address: Address) {
-        self.shippingadress = address
+        self.shippingAddress = address
     }
     
     private func find(product: Product) -> Int? {
