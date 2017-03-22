@@ -18,9 +18,7 @@ class ProductDetailVC: UIViewController {
     @IBOutlet weak var productDescriptionImageView: UIImageView!
     @IBOutlet weak var productDescriptionLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var shoppingCartButton: UIButton!
-    
     @IBOutlet weak var cartItemCountLabel: UILabel!
     
     // MARK: - Properties
@@ -42,6 +40,12 @@ class ProductDetailVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        cartItemCountLabel.text = "\(self.shoppingCart.totalItem())"
     }
 
     override func didReceiveMemoryWarning() {

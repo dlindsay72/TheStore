@@ -17,6 +17,7 @@
 		7B42DD001E8051FA00DF979D /* AddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B42DCFF1E8051FA00DF979D /* AddressVC.swift */; };
 		7B447D4F1E7C51B400FE58FF /* UIColor.Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B447D4E1E7C51B400FE58FF /* UIColor.Extension.swift */; };
 		7B447D511E7C56FA00FE58FF /* UserRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B447D501E7C56FA00FE58FF /* UserRating.swift */; };
+		7B4571A81E831D0D0011E1F7 /* OrderConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4571A71E831D0D0011E1F7 /* OrderConfirmationVC.swift */; };
 		7B4AC4651E81D48E0007FDBB /* PopoverTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4AC4641E81D48E0007FDBB /* PopoverTableVC.swift */; };
 		7B4B46CF1E81C61E00216321 /* NewCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4B46CE1E81C61E00216321 /* NewCardTableViewCell.swift */; };
 		7B54AC4D1E8045EE0024245B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B54AC4C1E8045EE0024245B /* LoginVC.swift */; };
@@ -108,6 +109,7 @@
 		7B42DCFF1E8051FA00DF979D /* AddressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressVC.swift; sourceTree = "<group>"; };
 		7B447D4E1E7C51B400FE58FF /* UIColor.Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.Extension.swift; sourceTree = "<group>"; };
 		7B447D501E7C56FA00FE58FF /* UserRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRating.swift; sourceTree = "<group>"; };
+		7B4571A71E831D0D0011E1F7 /* OrderConfirmationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderConfirmationVC.swift; sourceTree = "<group>"; };
 		7B4AC4641E81D48E0007FDBB /* PopoverTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverTableVC.swift; sourceTree = "<group>"; };
 		7B4B46CE1E81C61E00216321 /* NewCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCardTableViewCell.swift; sourceTree = "<group>"; };
 		7B54AC4C1E8045EE0024245B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -216,6 +218,14 @@
 				7BB87BAB1E80756200D83C69 /* NewCustomerVC.swift */,
 			);
 			name = Customer;
+			sourceTree = "<group>";
+		};
+		7B4571A61E831CF00011E1F7 /* orderConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				7B4571A71E831D0D0011E1F7 /* OrderConfirmationVC.swift */,
+			);
+			name = orderConfirmation;
 			sourceTree = "<group>";
 		};
 		7B54AC4B1E8045D30024245B /* Login */ = {
@@ -539,6 +549,7 @@
 		7BD54DB61E7A1E96005466C7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7B4571A61E831CF00011E1F7 /* orderConfirmation */,
 				7B70CC451E81C033006664C0 /* Payment */,
 				7B42DCFE1E8051E500DF979D /* Customer */,
 				7B54AC4B1E8045D30024245B /* Login */,
@@ -723,6 +734,7 @@
 				7BBA7B911E7AFFD700DA23F7 /* String+Extension.swift in Sources */,
 				7B42DD001E8051FA00DF979D /* AddressVC.swift in Sources */,
 				7B7418731E7A23E900CD9F02 /* HomeVC.swift in Sources */,
+				7B4571A81E831D0D0011E1F7 /* OrderConfirmationVC.swift in Sources */,
 				7B4AC4651E81D48E0007FDBB /* PopoverTableVC.swift in Sources */,
 				7B5662941E7F3779002C822F /* CartTableVC.swift in Sources */,
 				7BBA7B8E1E7AFF3000DA23F7 /* Utility.swift in Sources */,
