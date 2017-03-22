@@ -137,7 +137,7 @@ extension AddressVC: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let address = addresses[row]
         
-        return "\(address.address1) \(address.address2), \(address.city), \(address.state) \(address.zip)"
+        return "\(address.address1!) \(address.address2!), \(address.city!), \(address.state!) \(address.zip!)"
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {

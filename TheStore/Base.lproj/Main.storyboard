@@ -696,7 +696,7 @@
                                                             <outlet property="delegate" destination="yUJ-Wx-KCi" id="1U1-NR-fJh"/>
                                                         </connections>
                                                     </pickerView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No address is currently on record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLx-Bp-ImB">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No address is currently on record" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MLx-Bp-ImB">
                                                         <rect key="frame" x="0.0" y="88" width="500" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="T4L-uZ-YAh"/>
@@ -783,7 +783,7 @@
                                                             <outlet property="delegate" destination="yUJ-Wx-KCi" id="Trp-5m-tUI"/>
                                                         </connections>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ESd-Z2-G4Z">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number - just numbers" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ESd-Z2-G4Z">
                                                         <rect key="frame" x="0.0" y="462.5" width="500" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="LIQ-az-Gf5"/>
@@ -1016,31 +1016,31 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="qp0-Yw-Jnf" customClass="NewCardTableViewCell" customModule="TheStore" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellAddNewCard" rowHeight="200" id="qp0-Yw-Jnf" customClass="NewCardTableViewCell" customModule="TheStore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="138" width="500" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qp0-Yw-Jnf" id="iMe-3Y-wSO">
                                             <rect key="frame" x="0.0" y="0.0" width="500" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AEM-LR-4Rl">
-                                                    <rect key="frame" x="10" y="0.0" width="300" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name on card" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AEM-LR-4Rl">
+                                                    <rect key="frame" x="10" y="5" width="300" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="300" id="TRd-4F-Ttz"/>
                                                         <constraint firstAttribute="height" constant="30" id="mI0-eC-UgN"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                                 </textField>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5A6-6x-0Py">
-                                                    <rect key="frame" x="10" y="46" width="300" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5A6-6x-0Py">
+                                                    <rect key="frame" x="10" y="51" width="300" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
                                                 </textField>
                                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5Y-LC-v6Z" customClass="MyButton" customModule="TheStore" customModuleProvider="target">
-                                                    <rect key="frame" x="10" y="162" width="120" height="30"/>
+                                                    <rect key="frame" x="10" y="167" width="120" height="30"/>
                                                     <color key="backgroundColor" red="0.67724466319999999" green="0.37840545180000001" blue="0.00017444389230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="EGn-wS-fmH"/>
@@ -1065,13 +1065,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiration date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXS-zD-oLc">
-                                                    <rect key="frame" x="10" y="91" width="115" height="21"/>
+                                                    <rect key="frame" x="10" y="96" width="115" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tT7-3b-S6d" customClass="MyButton" customModule="TheStore" customModuleProvider="target">
-                                                    <rect key="frame" x="10" y="120" width="40" height="30"/>
+                                                    <rect key="frame" x="10" y="125" width="40" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="cWr-PV-pbH"/>
                                                         <constraint firstAttribute="height" constant="30" id="vl7-4p-7lf"/>
@@ -1091,9 +1091,12 @@
                                                             <color key="value" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="didTapExpMonth:" destination="mqW-tw-bbb" eventType="touchUpInside" id="PPF-IT-pNF"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dV2-bm-sAS" customClass="MyButton" customModule="TheStore" customModuleProvider="target">
-                                                    <rect key="frame" x="60" y="120" width="60" height="30"/>
+                                                    <rect key="frame" x="60" y="125" width="60" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="cak-nd-G2h"/>
                                                         <constraint firstAttribute="height" constant="30" id="s0X-PJ-ntA"/>
@@ -1113,6 +1116,9 @@
                                                             <color key="value" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="didTapExpYear:" destination="mqW-tw-bbb" eventType="touchUpInside" id="hZz-2e-3wF"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -1129,7 +1135,7 @@
                                                 <constraint firstItem="AEM-LR-4Rl" firstAttribute="leading" secondItem="iMe-3Y-wSO" secondAttribute="leading" constant="10" id="ipk-06-0Rf"/>
                                                 <constraint firstItem="dV2-bm-sAS" firstAttribute="centerY" secondItem="tT7-3b-S6d" secondAttribute="centerY" id="jNA-Im-EgF"/>
                                                 <constraint firstItem="tT7-3b-S6d" firstAttribute="leading" secondItem="5A6-6x-0Py" secondAttribute="leading" id="jnK-x4-TiP"/>
-                                                <constraint firstItem="AEM-LR-4Rl" firstAttribute="top" secondItem="iMe-3Y-wSO" secondAttribute="top" id="uaF-oL-AnF"/>
+                                                <constraint firstItem="AEM-LR-4Rl" firstAttribute="top" secondItem="iMe-3Y-wSO" secondAttribute="top" constant="5" id="uaF-oL-AnF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -1181,6 +1187,9 @@
                             <constraint firstItem="e3H-yn-cLe" firstAttribute="top" secondItem="iAu-dD-UPe" secondAttribute="bottom" constant="12" id="mdP-uf-DDz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="hNZ-Uj-mIT" id="Q2Y-LG-qof"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JtU-ds-e7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1851,7 +1860,7 @@ Gift-Wrap available.</string>
         <!--Navigation Controller-->
         <scene sceneID="3Yz-LN-Sty">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pi2-m8-VDd" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navPopover" automaticallyAdjustsScrollViewInsets="NO" id="pi2-m8-VDd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <value key="contentSizeForViewInPopover" type="size" width="200" height="540"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
